@@ -10,11 +10,16 @@ import UIKit
 
 class LoginViewController : UIViewController {
   @IBOutlet weak var backgroundBlurView: UIView!
+  @IBOutlet weak var createAccountButton: UIButton!
   
   override func viewDidLoad() {
     super.viewDidLoad()
     
     BlurView.insertBlurView(backgroundBlurView, style: UIBlurEffectStyle.Dark)
+    
+//    createAccountButton.setTitleColor(UIColor.redColor(), forState: UIControlState.Highlighted)
+    
+    
   }
   
   override func prefersStatusBarHidden() -> Bool {
