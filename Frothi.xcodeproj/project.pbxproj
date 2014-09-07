@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01B720F619BBC14700FCA4ED /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B720F519BBC14700FCA4ED /* HomeController.swift */; };
+		01B720F819BBE0C500FCA4ED /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B720F719BBE0C500FCA4ED /* CardTableViewCell.swift */; };
 		01EF592F19BABFE10049B181 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EF592E19BABFE10049B181 /* AppDelegate.swift */; };
 		01EF593419BABFE10049B181 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01EF593219BABFE10049B181 /* Main.storyboard */; };
 		01EF593619BABFE10049B181 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01EF593519BABFE10049B181 /* Images.xcassets */; };
 		01EF594219BABFE10049B181 /* FrothiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EF594119BABFE10049B181 /* FrothiTests.swift */; };
 		01EF595219BAC7560049B181 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EF595119BAC7560049B181 /* LoginViewController.swift */; };
 		01EF595419BACA390049B181 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EF595319BACA390049B181 /* BlurView.swift */; };
+		01EF595A19BAE9250049B181 /* SpringAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EF595919BAE9250049B181 /* SpringAnimations.swift */; };
 		A4AEB9BDB8CF419B8849FB22 /* libPods-Frothi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 08A0870D2E99488188D4AA95 /* libPods-Frothi.a */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01B720F519BBC14700FCA4ED /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		01B720F719BBE0C500FCA4ED /* CardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
 		01EF592919BABFE10049B181 /* Frothi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Frothi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01EF592D19BABFE10049B181 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01EF592E19BABFE10049B181 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +42,7 @@
 		01EF594119BABFE10049B181 /* FrothiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrothiTests.swift; sourceTree = "<group>"; };
 		01EF595119BAC7560049B181 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		01EF595319BACA390049B181 /* BlurView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
+		01EF595919BAE9250049B181 /* SpringAnimations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringAnimations.swift; sourceTree = "<group>"; };
 		08A0870D2E99488188D4AA95 /* libPods-Frothi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Frothi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A68AAC64802A41CC96923985 /* Pods-Frothi.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Frothi.xcconfig"; path = "Pods/Pods-Frothi.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -138,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				01EF595119BAC7560049B181 /* LoginViewController.swift */,
+				01B720F519BBC14700FCA4ED /* HomeController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -146,6 +153,8 @@
 			isa = PBXGroup;
 			children = (
 				01EF595319BACA390049B181 /* BlurView.swift */,
+				01EF595919BAE9250049B181 /* SpringAnimations.swift */,
+				01B720F719BBE0C500FCA4ED /* CardTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -293,8 +302,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				01EF595219BAC7560049B181 /* LoginViewController.swift in Sources */,
+				01B720F819BBE0C500FCA4ED /* CardTableViewCell.swift in Sources */,
 				01EF592F19BABFE10049B181 /* AppDelegate.swift in Sources */,
 				01EF595419BACA390049B181 /* BlurView.swift in Sources */,
+				01EF595A19BAE9250049B181 /* SpringAnimations.swift in Sources */,
+				01B720F619BBC14700FCA4ED /* HomeController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +424,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Frothi/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -424,6 +437,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Frothi/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
