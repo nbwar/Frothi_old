@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6206.9" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="zef-TS-IBg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6206.9" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7026.1"/>
     </dependencies>
     <scenes>
-        <!--Login View Controller-->
+        <!--Login Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="LoginViewController" customModule="Frothi" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="LoginController" customModule="Frothi" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -68,7 +68,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </button>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z0E-xm-YLP" customClass="CSAnimationView">
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z0E-xm-YLP">
                                         <rect key="frame" x="54" y="20" width="211" height="129"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Frothi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wii-kM-wXr">
@@ -79,15 +79,6 @@
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="type" value="fadeIn"/>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="duration">
-                                                <real key="value" value="0.5"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="delay">
-                                                <real key="value" value="0.29999999999999999"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="go7-fQ-7A3">
                                         <rect key="frame" x="38" y="219" width="276" height="105"/>
@@ -100,6 +91,9 @@
                                                 <state key="normal" backgroundImage="button-login">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="zef-TS-IBg" kind="modal" modalTransitionStyle="flipHorizontal" id="z8B-Pd-tYP"/>
+                                                </connections>
                                             </button>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon-email" translatesAutoresizingMaskIntoConstraints="NO" id="u46-Xt-2Dn">
                                                 <rect key="frame" x="10" y="23" width="16" height="13"/>
@@ -154,7 +148,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="595" y="-120"/>
+            <point key="canvasLocation" x="-716" y="581"/>
         </scene>
         <!--Home Table View Controller-->
         <scene sceneID="Ayg-kW-xSf">
@@ -173,9 +167,15 @@
                                         <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="owl-Sh-ZHL">
                                             <rect key="frame" x="30" y="20" width="260" height="177"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="latte" translatesAutoresizingMaskIntoConstraints="NO" id="QX7-oS-eXN">
-                                                    <rect key="frame" x="0.0" y="0.0" width="260" height="127"/>
-                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EI7-lX-Yyl">
+                                                    <rect key="frame" x="0.0" y="2" width="262" height="125"/>
+                                                    <state key="normal" backgroundImage="latte">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="imageButtonDidPress:" destination="bBG-0Y-mkx" eventType="touchUpInside" id="aHC-1o-o8f"/>
+                                                    </connections>
+                                                </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c6b-1P-GGR">
                                                     <rect key="frame" x="110" y="127" width="41" height="50"/>
                                                     <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
@@ -209,6 +209,9 @@
                                                     <state key="normal" image="icon-minus">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="minusButtonDidPress:" destination="bBG-0Y-mkx" eventType="touchUpInside" id="4Qj-Mj-zc1"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CfO-Fh-VQe">
                                                     <rect key="frame" x="138" y="127" width="122" height="50"/>
@@ -216,14 +219,8 @@
                                                     <state key="normal" image="icon-plus">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
-                                                </button>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EI7-lX-Yyl">
-                                                    <rect key="frame" x="0.0" y="3" width="260" height="127"/>
-                                                    <state key="normal">
-                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                    </state>
                                                     <connections>
-                                                        <action selector="detailButtonDidPress:" destination="bBG-0Y-mkx" eventType="touchUpInside" id="C5H-xr-qno"/>
+                                                        <action selector="plusButtonDidPress:" destination="bBG-0Y-mkx" eventType="touchUpInside" id="lHn-vO-4tz"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -236,6 +233,11 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="amountLabel" destination="c6b-1P-GGR" id="QdH-yO-XSE"/>
+                                    <outlet property="cardView" destination="owl-Sh-ZHL" id="j0R-K4-a8o"/>
+                                    <outlet property="imageButton" destination="EI7-lX-Yyl" id="Nsp-NZ-PT1"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -247,14 +249,14 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sl8-me-EJF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="823" y="518"/>
+            <point key="canvasLocation" x="276" y="581"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="J2H-FD-ojn">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4bP-uD-xqk" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zef-TS-IBg" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="4Yn-M0-OYJ"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="KV1-D6-Khb">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -268,8 +270,9 @@
                         <segue destination="ZDY-0s-GEi" kind="relationship" relationship="rootViewController" id="r8w-Zg-YHV"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4bP-uD-xqk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="360" y="525"/>
+            <point key="canvasLocation" x="-236" y="581"/>
         </scene>
     </scenes>
     <resources>

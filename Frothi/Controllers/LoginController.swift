@@ -1,6 +1,6 @@
 import UIKit
 
-class LoginViewController : UIViewController {
+class LoginController : UIViewController {
   @IBOutlet weak var backgroundBlurView: UIView!
   @IBOutlet weak var createAccountButton: UIButton!
   @IBOutlet weak var loginView: UIView!

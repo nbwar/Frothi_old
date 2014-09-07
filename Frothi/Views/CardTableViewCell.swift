@@ -7,9 +7,20 @@ protocol CardTableViewCellDelegate {
 class CardTableViewCell : UITableViewCell {
   var delegate: CardTableViewCellDelegate?
   
-
-  @IBAction func detailButtonDidPress(sender: AnyObject) {
-     delegate?.detailButtonDidPress(self, sender: sender)
+  @IBOutlet weak var cardView: UIView!
+  @IBOutlet weak var amountLabel: UILabel!
+  @IBOutlet weak var imageButton: UIButton!
+  
+  
+  
+  @IBAction func imageButtonDidPress(sender: AnyObject) {
+    delegate?.detailButtonDidPress(self, sender: sender)
+  }
+  
+  @IBAction func plusButtonDidPress(sender: AnyObject) {
+  }
+  
+  @IBAction func minusButtonDidPress(sender: AnyObject) {
   }
   
 }

@@ -1,6 +1,6 @@
 import UIKit
 
-//IOS 8 ONLY. Will wait on to use this
+//IOS 8 ONLY
 class BlurView {
   class func insertBlurView(view: UIView, style: UIBlurEffectStyle) {
     view.backgroundColor = UIColor.clearColor()

@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		01B720F619BBC14700FCA4ED /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B720F519BBC14700FCA4ED /* HomeController.swift */; };
 		01B720F819BBE0C500FCA4ED /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B720F719BBE0C500FCA4ED /* CardTableViewCell.swift */; };
+		01B7210019BC43A100FCA4ED /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01B720FF19BC43A100FCA4ED /* DetailView.xib */; };
+		01B7210219BCCCCB00FCA4ED /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B7210119BCCCCB00FCA4ED /* DetailView.swift */; };
 		01EF592F19BABFE10049B181 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EF592E19BABFE10049B181 /* AppDelegate.swift */; };
 		01EF593419BABFE10049B181 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01EF593219BABFE10049B181 /* Main.storyboard */; };
 		01EF593619BABFE10049B181 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01EF593519BABFE10049B181 /* Images.xcassets */; };
 		01EF594219BABFE10049B181 /* FrothiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EF594119BABFE10049B181 /* FrothiTests.swift */; };
-		01EF595219BAC7560049B181 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EF595119BAC7560049B181 /* LoginViewController.swift */; };
+		01EF595219BAC7560049B181 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EF595119BAC7560049B181 /* LoginController.swift */; };
 		01EF595419BACA390049B181 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EF595319BACA390049B181 /* BlurView.swift */; };
 		01EF595A19BAE9250049B181 /* SpringAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EF595919BAE9250049B181 /* SpringAnimations.swift */; };
 		A4AEB9BDB8CF419B8849FB22 /* libPods-Frothi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 08A0870D2E99488188D4AA95 /* libPods-Frothi.a */; };
@@ -32,6 +34,8 @@
 /* Begin PBXFileReference section */
 		01B720F519BBC14700FCA4ED /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		01B720F719BBE0C500FCA4ED /* CardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
+		01B720FF19BC43A100FCA4ED /* DetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailView.xib; sourceTree = "<group>"; };
+		01B7210119BCCCCB00FCA4ED /* DetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		01EF592919BABFE10049B181 /* Frothi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Frothi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01EF592D19BABFE10049B181 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01EF592E19BABFE10049B181 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -40,7 +44,7 @@
 		01EF593B19BABFE10049B181 /* FrothiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FrothiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		01EF594019BABFE10049B181 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01EF594119BABFE10049B181 /* FrothiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrothiTests.swift; sourceTree = "<group>"; };
-		01EF595119BAC7560049B181 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		01EF595119BAC7560049B181 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		01EF595319BACA390049B181 /* BlurView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
 		01EF595919BAE9250049B181 /* SpringAnimations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringAnimations.swift; sourceTree = "<group>"; };
 		08A0870D2E99488188D4AA95 /* libPods-Frothi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Frothi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,6 +99,7 @@
 				01EF594B19BAC6B10049B181 /* Models */,
 				01EF592E19BABFE10049B181 /* AppDelegate.swift */,
 				01EF593219BABFE10049B181 /* Main.storyboard */,
+				01B720FF19BC43A100FCA4ED /* DetailView.xib */,
 				01EF593519BABFE10049B181 /* Images.xcassets */,
 				01EF592C19BABFE10049B181 /* Supporting Files */,
 			);
@@ -143,7 +148,7 @@
 		01EF594D19BAC6B80049B181 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				01EF595119BAC7560049B181 /* LoginViewController.swift */,
+				01EF595119BAC7560049B181 /* LoginController.swift */,
 				01B720F519BBC14700FCA4ED /* HomeController.swift */,
 			);
 			path = Controllers;
@@ -155,6 +160,7 @@
 				01EF595319BACA390049B181 /* BlurView.swift */,
 				01EF595919BAE9250049B181 /* SpringAnimations.swift */,
 				01B720F719BBE0C500FCA4ED /* CardTableViewCell.swift */,
+				01B7210119BCCCCB00FCA4ED /* DetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -250,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				01EF593419BABFE10049B181 /* Main.storyboard in Resources */,
+				01B7210019BC43A100FCA4ED /* DetailView.xib in Resources */,
 				01EF593619BABFE10049B181 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,9 +308,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01EF595219BAC7560049B181 /* LoginViewController.swift in Sources */,
+				01EF595219BAC7560049B181 /* LoginController.swift in Sources */,
 				01B720F819BBE0C500FCA4ED /* CardTableViewCell.swift in Sources */,
 				01EF592F19BABFE10049B181 /* AppDelegate.swift in Sources */,
+				01B7210219BCCCCB00FCA4ED /* DetailView.swift in Sources */,
 				01EF595419BACA390049B181 /* BlurView.swift in Sources */,
 				01EF595A19BAE9250049B181 /* SpringAnimations.swift in Sources */,
 				01B720F619BBC14700FCA4ED /* HomeController.swift in Sources */,

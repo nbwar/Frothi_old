@@ -1,7 +1,8 @@
 import UIKit
 
-class HomeController : UITableViewController, CardTableViewCellDelegate {
-
+class HomeController : UITableViewController, CardTableViewCellDelegate, DetailViewDelegate {
+  
+  var detailView:DetailView?
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -29,7 +30,40 @@ class HomeController : UITableViewController, CardTableViewCellDelegate {
     return false
   }
   
+//  CardTableViewCellDelegate Methods
+  
   func detailButtonDidPress(cell: CardTableViewCell, sender: AnyObject) {
-    println("PUSHHEDD")
+    detailView = NSBundle.mainBundle().loadNibNamed("DetailView", owner: self, options: nil).first as? DetailView
+    detailView?.frame = CGRectMake(0, 0, view.frame.width, view.frame.height)
+    detailView?.delegate = self
+
+    self.navigationController?.navigationBarHidden = false
+    
+    if (detailView != nil) {
+      self.navigationController?.view.addSubview(detailView!)
+      detailView?.backgroundColor = UIColor.blackColor()
+      detailView?.alpha = 0
+      
+      spring(0.3, {
+        self.detailView?.backgroundColor = UIColor.clearColor()
+        self.detailView?.alpha = 1
+      })
+    }
+  }
+  
+  
+//  DetailViewDelegate Methods
+  func closeButtonDidPress(detailView: DetailView, sender: AnyObject) {
+    
+    
+    springWithCompletion(0.3, {
+      self.detailView?.backgroundColor = UIColor.blackColor()
+      self.detailView!.alpha = 0
+    }, { finished in
+      self.detailView!.removeFromSuperview()
+      self.detailView = nil
+        
+    })
+
   }
 }
