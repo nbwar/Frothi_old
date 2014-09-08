@@ -36,34 +36,39 @@ class HomeController : UITableViewController, CardTableViewCellDelegate, DetailV
     detailView = NSBundle.mainBundle().loadNibNamed("DetailView", owner: self, options: nil).first as? DetailView
     detailView?.frame = CGRectMake(0, 0, view.frame.width, view.frame.height)
     detailView?.delegate = self
-
-    self.navigationController?.navigationBarHidden = false
     
     if (detailView != nil) {
-      self.navigationController?.view.addSubview(detailView!)
-      detailView?.backgroundColor = UIColor.blackColor()
-      detailView?.alpha = 0
-      
-      spring(0.3, {
-        self.detailView?.backgroundColor = UIColor.clearColor()
-        self.detailView?.alpha = 1
-      })
+      addViewToNavigationControllerWithAnimation(detailView!)
     }
   }
   
   
 //  DetailViewDelegate Methods
+  
   func closeButtonDidPress(detailView: DetailView, sender: AnyObject) {
-    
-    
-    springWithCompletion(0.3, {
-      self.detailView?.backgroundColor = UIColor.blackColor()
-      self.detailView!.alpha = 0
-    }, { finished in
-      self.detailView!.removeFromSuperview()
-      self.detailView = nil
-        
-    })
-
+    removeViewFromNaviagtionControllerWithAnimation(detailView)
+    self.detailView = nil
   }
-}
+  
+//  Helpers
+  
+  func addViewToNavigationControllerWithAnimation(viewToAdd: UIView) {
+    self.navigationController?.view.addSubview(viewToAdd)
+    viewToAdd.backgroundColor = UIColor.blackColor()
+    viewToAdd.alpha = 0
+    
+    spring(0.3, {
+      viewToAdd.backgroundColor = UIColor.clearColor()
+      viewToAdd.alpha = 1
+    })
+  }
+  
+  func removeViewFromNaviagtionControllerWithAnimation(viewToRemove: UIView) {
+    springWithCompletion(0.3, {
+      viewToRemove.backgroundColor = UIColor.blackColor()
+      viewToRemove.alpha = 0
+      }, { finished in
+        viewToRemove.removeFromSuperview()
+    })
+  }
+} // end

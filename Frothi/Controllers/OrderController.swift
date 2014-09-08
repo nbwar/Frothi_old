@@ -1,0 +1,29 @@
+//
+//  OrderController.swift
+//  Frothi
+//
+//  Created by Nicholas Wargnier on 9/7/14.
+//  Copyright (c) 2014 nick. All rights reserved.
+//
+
+import UIKit
+import QuartzCore
+
+class OrderController : UIViewController {
+  let blueColor = UIColor(red: 42/255, green: 95/255, blue: 124/255, alpha: 1.0).CGColor
+  let orangeColor = UIColor(red: 57/255, green: 35/255, blue: 13/225, alpha: 1.0).CGColor
+  
+  @IBOutlet weak var gradientView: GradientView!
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    
+    setupGradient()
+  }
+  
+  func setupGradient() {
+    let colors:[AnyObject] = [blueColor, orangeColor]
+    gradientView.drawGradient(view, colors: colors)
+  }
+  
+}

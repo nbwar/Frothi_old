@@ -14,8 +14,8 @@
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6aL-6R-HtB" customClass="CSBlurView">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                     <subviews>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="latte" translatesAutoresizingMaskIntoConstraints="NO" id="Rop-1t-de4">
-                            <rect key="frame" x="49" y="111" width="221" height="170"/>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="latte" translatesAutoresizingMaskIntoConstraints="NO" id="Rop-1t-de4">
+                            <rect key="frame" x="29" y="111" width="262" height="170"/>
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                     <integer key="value" value="10"/>

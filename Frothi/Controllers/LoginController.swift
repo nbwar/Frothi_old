@@ -8,11 +8,7 @@ class LoginController : UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-//    BlurView.insertBlurView(backgroundBlurView, style: UIBlurEffectStyle.Dark)
-    
     loginView.alpha = 0
-    
-    
   }
   
   override func viewDidAppear(animated: Bool) {
@@ -34,8 +30,6 @@ class LoginController : UIViewController {
       let translate = CGAffineTransformMakeTranslation(0, 0)
       self.loginView.transform = CGAffineTransformConcat(scale, translate)
     }
-  
-    
     loginView.alpha = 1
   }
 
