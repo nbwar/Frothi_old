@@ -76,19 +76,3 @@ func springScaleTo (view: UIView, x: CGFloat, y: CGFloat, scaleX: CGFloat, scale
     }, completion: nil)
 }
 
-func popoverTopRight(view: UIView) {
-  view.hidden = false
-  var translate = CGAffineTransformMakeTranslation(200, -200)
-  var scale = CGAffineTransformMakeScale(0.3, 0.3)
-  view.alpha = 0
-  view.transform = CGAffineTransformConcat(translate, scale)
-  
-  UIView.animateWithDuration(0.6, delay: 0, usingSpringWithDamping: 0.6, initialSpringVelocity: 0.8, options: nil, animations: {
-    
-    var translate = CGAffineTransformMakeTranslation(0, 0)
-    var scale = CGAffineTransformMakeScale(1, 1)
-    view.transform = CGAffineTransformConcat(translate, scale)
-    view.alpha = 1
-    
-    }, completion: nil)
-}
