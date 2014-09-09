@@ -15,6 +15,10 @@ class OrderController : UIViewController, UITableViewDelegate, UITableViewDataSo
   
   @IBOutlet weak var gradientView: GradientView!
   
+  @IBAction func backButtonPressed(sender: AnyObject) {
+    navigationController?.popViewControllerAnimated(true)
+  }
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     

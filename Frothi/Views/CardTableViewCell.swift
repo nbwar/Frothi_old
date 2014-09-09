@@ -1,7 +1,9 @@
 import UIKit
 
 protocol CardTableViewCellDelegate {
-  func detailButtonDidPress(cell: CardTableViewCell ,sender: AnyObject)
+  func detailButtonPressed(cell: CardTableViewCell ,sender: AnyObject)
+  func plusButtonPressed(cell: CardTableViewCell, sender: AnyObject)
+  func minusButtonPressed(cell: CardTableViewCell, sender: AnyObject)
 }
 
 class CardTableViewCell : UITableViewCell {
@@ -10,17 +12,20 @@ class CardTableViewCell : UITableViewCell {
   @IBOutlet weak var cardView: UIView!
   @IBOutlet weak var amountLabel: UILabel!
   @IBOutlet weak var imageButton: UIButton!
+  @IBOutlet weak var nameLabel: UILabel!
+  @IBOutlet weak var priceLabel: UILabel!
   
   
-  
-  @IBAction func imageButtonDidPress(sender: AnyObject) {
-    delegate?.detailButtonDidPress(self, sender: sender)
+  @IBAction func imageButtonPressed(sender: AnyObject) {
+    delegate?.detailButtonPressed(self, sender: sender)
   }
   
-  @IBAction func plusButtonDidPress(sender: AnyObject) {
+  @IBAction func plusButtonPressed(sender: AnyObject) {
+    delegate?.plusButtonPressed(self, sender: sender)
   }
   
-  @IBAction func minusButtonDidPress(sender: AnyObject) {
+  @IBAction func minusButtonPressed(sender: AnyObject) {
+    delegate?.minusButtonPressed(self, sender: sender)
   }
   
 }

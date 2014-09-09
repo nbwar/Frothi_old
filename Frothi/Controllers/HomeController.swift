@@ -1,7 +1,7 @@
 import UIKit
 
 class HomeController : UITableViewController, CardTableViewCellDelegate, DetailViewDelegate {
-  
+  let cart = Cart()
   var detailView:DetailView?
   
   override func viewDidLoad() {
@@ -9,6 +9,7 @@ class HomeController : UITableViewController, CardTableViewCellDelegate, DetailV
     
     self.tableView.backgroundView = UIImageView(image:UIImage(named:"bg-home"))
     self.tableView.separatorColor = UIColor.clearColor()
+    
   }
   
   override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -32,9 +33,9 @@ class HomeController : UITableViewController, CardTableViewCellDelegate, DetailV
   
 //  CardTableViewCellDelegate Methods
   
-  func detailButtonDidPress(cell: CardTableViewCell, sender: AnyObject) {
+  func detailButtonPressed(cell: CardTableViewCell, sender: AnyObject) {
     detailView = NSBundle.mainBundle().loadNibNamed("DetailView", owner: self, options: nil).first as? DetailView
-    detailView?.frame = CGRectMake(0, 0, view.frame.width, view.frame.height)
+    detailView?.frame = CGRectMake(0, 0, view.bounds.width, view.bounds.height)
     detailView?.delegate = self
     
     if (detailView != nil) {
@@ -42,10 +43,26 @@ class HomeController : UITableViewController, CardTableViewCellDelegate, DetailV
     }
   }
   
+  func plusButtonPressed(cell: CardTableViewCell, sender: AnyObject) {
+    var number = cell.amountLabel.text?.toInt()!
+    number! += 1
+    cell.amountLabel.text = "\(number!)"
+  }
+  
+  func minusButtonPressed(cell: CardTableViewCell, sender: AnyObject) {
+    var number = cell.amountLabel.text?.toInt()!
+    if number > 1 {
+      number! -= 1
+    } else {
+      number = 0
+    }
+    cell.amountLabel.text = "\(number!)"
+  }
+  
   
 //  DetailViewDelegate Methods
   
-  func closeButtonDidPress(detailView: DetailView, sender: AnyObject) {
+  func closeButtonPressed(detailView: DetailView, sender: AnyObject) {
     removeViewFromNaviagtionControllerWithAnimation(detailView)
     self.detailView = nil
   }

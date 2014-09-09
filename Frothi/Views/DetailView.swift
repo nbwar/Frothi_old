@@ -9,14 +9,14 @@
 import UIKit
 
 protocol DetailViewDelegate {
-  func closeButtonDidPress(detailView: DetailView ,sender: AnyObject)
+  func closeButtonPressed(detailView: DetailView ,sender: AnyObject)
 }
 
 class DetailView : UIView {
   var delegate: DetailViewDelegate?
   
   
-  @IBAction func closeButtonDidPress(sender: AnyObject) {
-    delegate?.closeButtonDidPress(self, sender: sender)
+  @IBAction func closeButtonPressed(sender: AnyObject) {
+    delegate?.closeButtonPressed(self, sender: sender)
   }
 }
