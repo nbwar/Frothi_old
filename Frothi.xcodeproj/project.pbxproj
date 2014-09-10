@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0108F23919C02D4900C237C5 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0108F23819C02D4900C237C5 /* MockData.swift */; };
 		0143E2CD19BD356600768A00 /* OrderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0143E2CC19BD356600768A00 /* OrderController.swift */; };
 		0143E2CF19BD394300768A00 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0143E2CE19BD394300768A00 /* GradientView.swift */; };
 		0143E2D119BE95C800768A00 /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0143E2D019BE95C800768A00 /* Cart.swift */; };
 		0143E2D319BE95DA00768A00 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0143E2D219BE95DA00768A00 /* Item.swift */; };
+		019873F019C01A8E00C27ABC /* OrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019873EF19C01A8E00C27ABC /* OrderTableViewCell.swift */; };
 		01B720F619BBC14700FCA4ED /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B720F519BBC14700FCA4ED /* HomeController.swift */; };
 		01B720F819BBE0C500FCA4ED /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B720F719BBE0C500FCA4ED /* CardTableViewCell.swift */; };
 		01B7210019BC43A100FCA4ED /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01B720FF19BC43A100FCA4ED /* DetailView.xib */; };
@@ -36,10 +38,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0108F23819C02D4900C237C5 /* MockData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 		0143E2CC19BD356600768A00 /* OrderController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderController.swift; sourceTree = "<group>"; };
 		0143E2CE19BD394300768A00 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		0143E2D019BE95C800768A00 /* Cart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
 		0143E2D219BE95DA00768A00 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		019873EF19C01A8E00C27ABC /* OrderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderTableViewCell.swift; sourceTree = "<group>"; };
 		01B720F519BBC14700FCA4ED /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		01B720F719BBE0C500FCA4ED /* CardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
 		01B720FF19BC43A100FCA4ED /* DetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailView.xib; sourceTree = "<group>"; };
@@ -151,6 +155,7 @@
 		01EF594C19BAC6B40049B181 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				0108F23819C02D4900C237C5 /* MockData.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -173,6 +178,7 @@
 				01B720F719BBE0C500FCA4ED /* CardTableViewCell.swift */,
 				01B7210119BCCCCB00FCA4ED /* DetailView.swift */,
 				0143E2CE19BD394300768A00 /* GradientView.swift */,
+				019873EF19C01A8E00C27ABC /* OrderTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -323,9 +329,11 @@
 				0143E2CD19BD356600768A00 /* OrderController.swift in Sources */,
 				01EF595219BAC7560049B181 /* LoginController.swift in Sources */,
 				01B720F819BBE0C500FCA4ED /* CardTableViewCell.swift in Sources */,
+				0108F23919C02D4900C237C5 /* MockData.swift in Sources */,
 				01EF592F19BABFE10049B181 /* AppDelegate.swift in Sources */,
 				01B7210219BCCCCB00FCA4ED /* DetailView.swift in Sources */,
 				01EF595419BACA390049B181 /* BlurView.swift in Sources */,
+				019873F019C01A8E00C27ABC /* OrderTableViewCell.swift in Sources */,
 				0143E2D319BE95DA00768A00 /* Item.swift in Sources */,
 				01EF595A19BAE9250049B181 /* SpringAnimations.swift in Sources */,
 				0143E2D119BE95C800768A00 /* Cart.swift in Sources */,

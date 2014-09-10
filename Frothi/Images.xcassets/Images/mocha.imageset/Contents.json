@@ -3,12 +3,12 @@
     {
       "idiom" : "universal",
       "scale" : "1x",
-      "filename" : "button-close.png"
+      "filename" : "mocha.png"
     },
     {
       "idiom" : "universal",
       "scale" : "2x",
-      "filename" : "button-close@2x.png"
+      "filename" : "mocha@2x.png"
     },
     {
       "idiom" : "universal",

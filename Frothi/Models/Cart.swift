@@ -24,4 +24,7 @@ class Cart {
     }
   }
   
+  func ids() -> Array<Int> {
+    return Array(items.keys)
+  }
 }

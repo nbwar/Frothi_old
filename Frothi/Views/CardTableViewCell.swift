@@ -27,5 +27,10 @@ class CardTableViewCell : UITableViewCell {
   @IBAction func minusButtonPressed(sender: AnyObject) {
     delegate?.minusButtonPressed(self, sender: sender)
   }
-  
+
+  func setup(item: Item) {
+    nameLabel.text = item.name
+    priceLabel.text = "$\(item.price)"
+    imageButton.setImage(UIImage(named: item.image), forState: UIControlState.Normal)
+  }
 }
