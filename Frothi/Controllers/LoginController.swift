@@ -7,7 +7,7 @@ class LoginController : UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
+    BlurView.insertBlurView(backgroundBlurView, style: .Dark)
     loginView.alpha = 0
   }
   

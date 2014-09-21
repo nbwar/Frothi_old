@@ -1,5 +1,8 @@
 class Cart {
   var items = Dictionary<Int, Item>()
+  var count: Int {
+    return Array(items.keys).count
+  }
   
   func empty() -> Bool {
     return items.isEmpty
@@ -27,4 +30,5 @@ class Cart {
   func ids() -> Array<Int> {
     return Array(items.keys)
   }
+  
 }

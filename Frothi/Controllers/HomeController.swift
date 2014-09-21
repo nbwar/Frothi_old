@@ -14,7 +14,7 @@ class HomeController : UITableViewController, CardTableViewCellDelegate, DetailV
     
     self.tableView.backgroundView = UIImageView(image:UIImage(named:"bg-home"))
     self.tableView.separatorColor = UIColor.clearColor()
-    
+
 
     
   }
@@ -40,23 +40,11 @@ class HomeController : UITableViewController, CardTableViewCellDelegate, DetailV
   
   override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCellWithIdentifier("Card", forIndexPath: indexPath) as CardTableViewCell
-    cell.delegate = self
-    
     var item = data[indexPath.row]
+    
+    cell.delegate = self
     cell.setup(item)
-
-//    var item = data[indexPath.row]
-//    println(item.name)
-//    cell.nameLabel.text = item.name
-//    cell.priceLabel.text = "$\(item.price)"
-//    
-//    
-//    cell.imageButton.setImage(UIImage(named: item.image), forState: UIControlState.Normal)
-//    cell.imageButton.setImage(UIImage(named: item.image), forState: UIControlState.Highlighted)
-
-
-
-
+    
     return cell
   }
   
@@ -68,8 +56,8 @@ class HomeController : UITableViewController, CardTableViewCellDelegate, DetailV
   
   func detailButtonPressed(cell: CardTableViewCell, sender: AnyObject) {
     detailView = NSBundle.mainBundle().loadNibNamed("DetailView", owner: self, options: nil).first as? DetailView
-    detailView?.frame = CGRectMake(0, 0, view.bounds.width, view.bounds.height)
     detailView?.delegate = self
+    
     
     if (detailView != nil) {
       addViewToNavigationControllerWithAnimation(detailView!)
@@ -80,16 +68,22 @@ class HomeController : UITableViewController, CardTableViewCellDelegate, DetailV
     var number = cell.amountLabel.text?.toInt()!
     number! += 1
     cell.amountLabel.text = "\(number!)"
+    var item = cell.item
+    cart.addItem(item)
   }
   
   func minusButtonPressed(cell: CardTableViewCell, sender: AnyObject) {
+    let item = cell.item
     var number = cell.amountLabel.text?.toInt()!
+    cart.removeItem(item)
+    
     if number > 1 {
       number! -= 1
     } else {
       number = 0
     }
     cell.amountLabel.text = "\(number!)"
+
   }
   
   
@@ -103,14 +97,14 @@ class HomeController : UITableViewController, CardTableViewCellDelegate, DetailV
 //  Helpers
   
   func addViewToNavigationControllerWithAnimation(viewToAdd: UIView) {
-    self.navigationController?.view.addSubview(viewToAdd)
-    viewToAdd.backgroundColor = UIColor.blackColor()
     viewToAdd.alpha = 0
+    self.navigationController?.view.addSubview(viewToAdd)
+    BlurView.insertBlurView(viewToAdd, style: UIBlurEffectStyle.Light)
+
     
-    spring(0.3, {
-      viewToAdd.backgroundColor = UIColor.clearColor()
+    UIView.animateWithDuration(0.3, delay: 0, options: nil, animations: {
       viewToAdd.alpha = 1
-    })
+    }, completion: nil)
   }
   
   func removeViewFromNaviagtionControllerWithAnimation(viewToRemove: UIView) {
