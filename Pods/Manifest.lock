@@ -1,13 +1,16 @@
 PODS:
   - Canvas (0.1.2)
+  - SWRevealViewController (2.3.0)
   - TPKeyboardAvoiding (1.2.4)
 
 DEPENDENCIES:
   - Canvas
+  - SWRevealViewController (~> 2.3)
   - TPKeyboardAvoiding
 
 SPEC CHECKSUMS:
   Canvas: ae2faca05a15c4d6659fb3ae5e2a14817df4449a
+  SWRevealViewController: f6d80638b8e12323e87ac79562345403a799cb77
   TPKeyboardAvoiding: 925e1e1912597d1a4956697eec3bd9656552153c
 
 COCOAPODS: 0.33.1

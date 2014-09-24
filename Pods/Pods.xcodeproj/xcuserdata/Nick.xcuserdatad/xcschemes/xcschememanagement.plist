@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-Frothi-SWRevealViewController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Frothi-TPKeyboardAvoiding.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>07ED68636C22429B80666D1A</key>
+		<key>2C9905CEF8DB49628C3A77DC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>ABF2CCD7EC56497B83846905</key>
+		<key>94EB9F45570541D9BF59DF6F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E7072FC97B1D4ACBB1D2D0DA</key>
+		<key>AB6E9FFC0D9E4B448F3C2CB6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CA744C29D89D434EA45BFF4D</key>
 		<dict>
 			<key>primary</key>
 			<true/>

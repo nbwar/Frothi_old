@@ -1,22 +1,29 @@
 import UIKit
 
 class HomeController : UITableViewController, CardTableViewCellDelegate, DetailViewDelegate {
+  @IBOutlet weak var menuButton: UIBarButtonItem!
+  
   let cart = Cart()
-  
   var detailView:DetailView?
-  
   var data = getData()
-  
-  
-  
+
   override func viewDidLoad() {
     super.viewDidLoad()
     
     self.tableView.backgroundView = UIImageView(image:UIImage(named:"bg-home"))
     self.tableView.separatorColor = UIColor.clearColor()
 
-
+    menuButton.target = self.revealViewController()
+    menuButton.action = Selector("revealToggle:")
     
+    navigationController?.navigationBar.barTintColor = UIColor(red: 0.051, green: 0.520, blue: 0.733, alpha: 1)
+    let avenirNext:UIFont = UIFont(name: "Avenir Next", size: 20)
+    let titleDict:NSDictionary = [NSFontAttributeName: avenirNext,NSForegroundColorAttributeName: UIColor.whiteColor()]
+    navigationController?.navigationBar.titleTextAttributes = titleDict
+  }
+  
+  override func viewDidAppear(animated: Bool) {
+    view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
   }
   
 //  Segues

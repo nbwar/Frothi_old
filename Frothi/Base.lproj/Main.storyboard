@@ -1,9 +1,71 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="zef-TS-IBg">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
+        <!--Frothi-->
+        <scene sceneID="XCT-dr-sqz">
+            <objects>
+                <viewController id="jg1-xA-UTF" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="79q-cR-M2n"/>
+                        <viewControllerLayoutGuide type="bottom" id="l8p-Xh-4QD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0EP-0h-ljz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Account" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uny-Z1-KuW">
+                                <rect key="frame" x="128" y="219" width="64" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Frothi" id="ugd-MM-ZE1">
+                        <barButtonItem key="leftBarButtonItem" image="icon-menu" id="I3s-Zs-TQW">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uHM-kh-qiu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-188" y="-209"/>
+        </scene>
+        <!--Frothi-->
+        <scene sceneID="YE9-Wm-u7F">
+            <objects>
+                <viewController id="ehC-Lq-ypZ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RkQ-DD-zbQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="MdY-Hy-Kh1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1bm-CD-4Zw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Map" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="USZ-Ac-4er">
+                                <rect key="frame" x="143" y="255" width="35" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Frothi" id="2sj-HH-m0a">
+                        <barButtonItem key="leftBarButtonItem" image="icon-menu" id="ckQ-aa-0le">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WHN-ap-4Fx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-612" y="-622"/>
+        </scene>
         <!--Login Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
@@ -91,9 +153,6 @@
                                                 <state key="normal" backgroundImage="button-login">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
-                                                <connections>
-                                                    <segue destination="zef-TS-IBg" kind="modal" modalTransitionStyle="flipHorizontal" id="z8B-Pd-tYP"/>
-                                                </connections>
                                             </button>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon-email" translatesAutoresizingMaskIntoConstraints="NO" id="u46-Xt-2Dn">
                                                 <rect key="frame" x="10" y="23" width="16" height="13"/>
@@ -143,12 +202,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-236" y="-172"/>
+            <point key="canvasLocation" x="-804" y="252"/>
         </scene>
         <!--Home Table View Controller-->
         <scene sceneID="Ayg-kW-xSf">
             <objects>
-                <tableViewController id="ZDY-0s-GEi" userLabel="Home Table View Controller" customClass="HomeController" customModule="Frothi" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="HomeController" id="ZDY-0s-GEi" userLabel="Home Table View Controller" customClass="HomeController" customModule="Frothi" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="205" sectionHeaderHeight="22" sectionFooterHeight="22" id="fUY-XP-w2U">
                         <rect key="frame" x="0.0" y="64" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -244,6 +303,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Frothi" id="JDV-Tc-01P">
+                        <barButtonItem key="leftBarButtonItem" image="icon-menu" id="IM4-0i-ja7">
+                            <color key="tintColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="icon-cup" id="pzy-gj-XeT">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
@@ -251,10 +313,13 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="menuButton" destination="IM4-0i-ja7" id="hvY-39-Kqa"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sl8-me-EJF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="276" y="581"/>
+            <point key="canvasLocation" x="-668" y="969"/>
         </scene>
         <!--Order Controller-->
         <scene sceneID="O5Y-7m-48k">
@@ -402,7 +467,78 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MUA-fB-tYj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="722.5" y="581"/>
+            <point key="canvasLocation" x="-150" y="957"/>
+        </scene>
+        <!--Side Menu Controller-->
+        <scene sceneID="mA0-rO-aCZ">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4QO-7D-lI7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="7R3-NJ-lgq" customClass="SideMenuController" customModule="Frothi" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HI8-Kt-3hJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="5xv-m6-NQD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1qT-da-dzA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MN0-Uk-3Mh" customClass="GradientView" customModule="Frothi" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="5r2-Ai-qFJ">
+                                        <rect key="frame" x="0.0" y="181" width="320" height="293"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <prototypes>
+                                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Navigation" textLabel="uIV-rE-Gwh" imageView="44N-6I-uMo" style="IBUITableViewCellStyleDefault" id="Q0o-V7-afq">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Q0o-V7-afq" id="Ac8-qH-uvk">
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uIV-rE-Gwh">
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="icon-email" id="44N-6I-uMo">
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                        </imageView>
+                                                    </subviews>
+                                                </tableViewCellContentView>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            </tableViewCell>
+                                        </prototypes>
+                                        <connections>
+                                            <outlet property="dataSource" destination="7R3-NJ-lgq" id="spR-9U-lMx"/>
+                                            <outlet property="delegate" destination="7R3-NJ-lgq" id="9tJ-MA-kCe"/>
+                                        </connections>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="gradientView" destination="MN0-Uk-3Mh" id="oFR-cd-Z5L"/>
+                        <outlet property="tableView" destination="5r2-Ai-qFJ" id="MOe-Xz-ns7"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="-1772" y="393"/>
+        </scene>
+        <!--Reveal View Controller-->
+        <scene sceneID="FCv-3a-Znu">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Aem-1y-HDv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="M1d-tB-l6g" customClass="SWRevealViewController" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="7R3-NJ-lgq" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="45q-Cb-cFS"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="-2150" y="393"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="J2H-FD-ojn">
@@ -425,7 +561,31 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4bP-uD-xqk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-236" y="581"/>
+            <point key="canvasLocation" x="-1177" y="1001"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="EUK-eu-IHq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="r18-gS-TpJ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="lYS-18-AYG"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="WPo-B8-bea">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="0.51229035850000004" blue="0.7154152989" alpha="0.34999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="jg1-xA-UTF" kind="relationship" relationship="rootViewController" id="oBi-R1-fY7"/>
+                        <segue destination="ehC-Lq-ypZ" kind="push" id="Sl6-r9-r25"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="igu-hp-6ia" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1168" y="-323"/>
         </scene>
     </scenes>
     <resources>
@@ -439,6 +599,7 @@
         <image name="icon-facebook" width="9" height="18"/>
         <image name="icon-location-pin" width="13" height="16"/>
         <image name="icon-lock" width="15" height="20"/>
+        <image name="icon-menu" width="24" height="16"/>
         <image name="icon-minus" width="20" height="2"/>
         <image name="icon-plus" width="20" height="20"/>
         <image name="latte" width="262" height="125"/>

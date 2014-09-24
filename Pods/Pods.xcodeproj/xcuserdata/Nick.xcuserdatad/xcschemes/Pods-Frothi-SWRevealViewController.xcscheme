@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2C9905CEF8DB49628C3A77DC"
-               BuildableName = "libPods-Frothi-TPKeyboardAvoiding.a"
-               BlueprintName = "Pods-Frothi-TPKeyboardAvoiding"
+               BlueprintIdentifier = "AB6E9FFC0D9E4B448F3C2CB6"
+               BuildableName = "libPods-Frothi-SWRevealViewController.a"
+               BlueprintName = "Pods-Frothi-SWRevealViewController"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

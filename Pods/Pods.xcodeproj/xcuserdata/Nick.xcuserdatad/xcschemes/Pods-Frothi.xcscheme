@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "07ED68636C22429B80666D1A"
+               BlueprintIdentifier = "94EB9F45570541D9BF59DF6F"
                BuildableName = "libPods-Frothi.a"
                BlueprintName = "Pods-Frothi"
                ReferencedContainer = "container:Pods.xcodeproj">
