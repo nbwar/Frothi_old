@@ -31,7 +31,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SWRevealViewControllerDel
 //    let homeController = HomeController()
 //    let sideMenuController = SideMenuController()
     
-    let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+    let mainStoryboard = UIStoryboard(name: "HomeController", bundle: nil)
     let homeController = mainStoryboard.instantiateViewControllerWithIdentifier("HomeController") as HomeController
     var homeNavigationController = UINavigationController(rootViewController: homeController)
     

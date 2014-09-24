@@ -15,6 +15,7 @@
 		0143E2D319BE95DA00768A00 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0143E2D219BE95DA00768A00 /* Item.swift */; };
 		0192350219D267D4007E6B11 /* SideMenuController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0192350119D267D4007E6B11 /* SideMenuController.storyboard */; };
 		0192350419D274DC007E6B11 /* AccountController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0192350319D274DC007E6B11 /* AccountController.storyboard */; };
+		0192350F19D284D8007E6B11 /* HomeController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0192350E19D284D8007E6B11 /* HomeController.storyboard */; };
 		019873F019C01A8E00C27ABC /* OrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019873EF19C01A8E00C27ABC /* OrderTableViewCell.swift */; };
 		01B720F619BBC14700FCA4ED /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B720F519BBC14700FCA4ED /* HomeController.swift */; };
 		01B720F819BBE0C500FCA4ED /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B720F719BBE0C500FCA4ED /* CardTableViewCell.swift */; };
@@ -51,8 +52,9 @@
 		0143E2D219BE95DA00768A00 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		0192350119D267D4007E6B11 /* SideMenuController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SideMenuController.storyboard; sourceTree = "<group>"; };
 		0192350319D274DC007E6B11 /* AccountController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AccountController.storyboard; sourceTree = "<group>"; };
+		0192350E19D284D8007E6B11 /* HomeController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HomeController.storyboard; sourceTree = "<group>"; };
 		019873EF19C01A8E00C27ABC /* OrderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderTableViewCell.swift; sourceTree = "<group>"; };
-		01B720F519BBC14700FCA4ED /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		01B720F519BBC14700FCA4ED /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeController.swift; path = Frothi/Controllers/HomeController/HomeController.swift; sourceTree = SOURCE_ROOT; };
 		01B720F719BBE0C500FCA4ED /* CardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
 		01B720FF19BC43A100FCA4ED /* DetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailView.xib; sourceTree = "<group>"; };
 		01B7210119BCCCCB00FCA4ED /* DetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
@@ -91,6 +93,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0192350B19D283C0007E6B11 /* HomeController */ = {
+			isa = PBXGroup;
+			children = (
+				01B720F519BBC14700FCA4ED /* HomeController.swift */,
+				0192350E19D284D8007E6B11 /* HomeController.storyboard */,
+			);
+			path = HomeController;
+			sourceTree = "<group>";
+		};
 		01EF592019BABFE10049B181 = {
 			isa = PBXGroup;
 			children = (
@@ -175,7 +186,7 @@
 			children = (
 				01F0E5B619CFB19B00DA8E84 /* AccountController */,
 				01EF595119BAC7560049B181 /* LoginController.swift */,
-				01B720F519BBC14700FCA4ED /* HomeController.swift */,
+				0192350B19D283C0007E6B11 /* HomeController */,
 				0143E2CC19BD356600768A00 /* OrderController.swift */,
 				01F0E5B319CFA05700DA8E84 /* SideMenuController */,
 			);
@@ -306,6 +317,7 @@
 				01EF593419BABFE10049B181 /* Main.storyboard in Resources */,
 				0192350219D267D4007E6B11 /* SideMenuController.storyboard in Resources */,
 				01B7210019BC43A100FCA4ED /* DetailView.xib in Resources */,
+				0192350F19D284D8007E6B11 /* HomeController.storyboard in Resources */,
 				01EF593619BABFE10049B181 /* Images.xcassets in Resources */,
 				0192350419D274DC007E6B11 /* AccountController.storyboard in Resources */,
 			);
