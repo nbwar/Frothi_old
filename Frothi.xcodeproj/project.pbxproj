@@ -22,7 +22,6 @@
 		01B7210019BC43A100FCA4ED /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01B720FF19BC43A100FCA4ED /* DetailView.xib */; };
 		01B7210219BCCCCB00FCA4ED /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B7210119BCCCCB00FCA4ED /* DetailView.swift */; };
 		01EF592F19BABFE10049B181 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EF592E19BABFE10049B181 /* AppDelegate.swift */; };
-		01EF593419BABFE10049B181 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01EF593219BABFE10049B181 /* Main.storyboard */; };
 		01EF593619BABFE10049B181 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01EF593519BABFE10049B181 /* Images.xcassets */; };
 		01EF594219BABFE10049B181 /* FrothiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EF594119BABFE10049B181 /* FrothiTests.swift */; };
 		01EF595219BAC7560049B181 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EF595119BAC7560049B181 /* LoginController.swift */; };
@@ -61,7 +60,6 @@
 		01EF592919BABFE10049B181 /* Frothi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Frothi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01EF592D19BABFE10049B181 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01EF592E19BABFE10049B181 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		01EF593319BABFE10049B181 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		01EF593519BABFE10049B181 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		01EF593B19BABFE10049B181 /* FrothiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FrothiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		01EF594019BABFE10049B181 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -130,7 +128,6 @@
 				01EF594C19BAC6B40049B181 /* API */,
 				01EF594B19BAC6B10049B181 /* Models */,
 				01EF592E19BABFE10049B181 /* AppDelegate.swift */,
-				01EF593219BABFE10049B181 /* Main.storyboard */,
 				01B720FF19BC43A100FCA4ED /* DetailView.xib */,
 				01EF593519BABFE10049B181 /* Images.xcassets */,
 				01EF592C19BABFE10049B181 /* Supporting Files */,
@@ -314,7 +311,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01EF593419BABFE10049B181 /* Main.storyboard in Resources */,
 				0192350219D267D4007E6B11 /* SideMenuController.storyboard in Resources */,
 				01B7210019BC43A100FCA4ED /* DetailView.xib in Resources */,
 				0192350F19D284D8007E6B11 /* HomeController.storyboard in Resources */,
@@ -405,17 +401,6 @@
 			targetProxy = 01EF593C19BABFE10049B181 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		01EF593219BABFE10049B181 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				01EF593319BABFE10049B181 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		01EF594319BABFE10049B181 /* Debug */ = {
