@@ -66,6 +66,15 @@ class HomeController : UITableViewController, CardTableViewCellDelegate, DetailV
     detailView = NSBundle.mainBundle().loadNibNamed("DetailView", owner: self, options: nil).first as? DetailView
     detailView?.delegate = self
     
+    let indexPath = tableView.indexPathForCell(cell)!
+    let item = data[indexPath.row]
+    
+    detailView?.imageView.image = UIImage(named: item.image)
+    detailView?.nameLabel.text = item.name
+    
+//    Will have to changed font color and styles when changing the description text for some reason
+//    detailView?.descriptionTextView.text = "HElLO"
+//    detailView?.descriptionTextView.textColor = UIColor.whiteColor()
     
     if (detailView != nil) {
       addViewToNavigationControllerWithAnimation(detailView!)

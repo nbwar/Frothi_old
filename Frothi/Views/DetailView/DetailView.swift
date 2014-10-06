@@ -5,6 +5,10 @@ protocol DetailViewDelegate {
 }
 
 class DetailView : UIView {
+  @IBOutlet weak var imageView: UIImageView!
+  @IBOutlet weak var descriptionTextView: UITextView!
+  @IBOutlet weak var nameLabel: UILabel!
+
   var delegate: DetailViewDelegate?
   
   
