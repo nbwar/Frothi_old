@@ -21,6 +21,10 @@ class SideMenuController : UIViewController, UITableViewDataSource, UITableViewD
     setupGradient()
   }
   
+  override func preferredStatusBarStyle() -> UIStatusBarStyle {
+    return UIStatusBarStyle.LightContent
+  }
+  
   // UITableViewDataSource methods
   func numberOfSectionsInTableView(tableView: UITableView) -> Int {
     return 1
@@ -55,29 +59,21 @@ class SideMenuController : UIViewController, UITableViewDataSource, UITableViewD
       selected = "MenuSelected"
     case "Account":
       let storyboard = UIStoryboard(name: "AccountController", bundle: nil)
-      let accountController = storyboard.instantiateViewControllerWithIdentifier("AccountController") as AccountController
-      newFrontController = UINavigationController(rootViewController: accountController)
+      newFrontController = storyboard.instantiateInitialViewController() as UINavigationController
       selected = "AccountSelected"
       
     case "Service Areas":
       let storyboard = UIStoryboard(name: "ServiceAreasController", bundle: nil)
-      let serviceAreasController = storyboard.instantiateViewControllerWithIdentifier("ServiceAreasController") as ServiceAreasController
-      newFrontController = UINavigationController(rootViewController: serviceAreasController)
+      newFrontController = storyboard.instantiateInitialViewController() as UINavigationController
       selected = "ServiceAreasSelected"
       
     default:
       newFrontController = homeController
     }
     self.revealViewController().pushFrontViewController(newFrontController, animated: true)
-    
 
   }
 
-  
-  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    
-    
-  }
   
   func setupGradient() {
     let colors:[AnyObject] = [blueColor, orangeColor]

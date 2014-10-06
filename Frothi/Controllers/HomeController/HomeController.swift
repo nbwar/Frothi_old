@@ -20,6 +20,7 @@ class HomeController : UITableViewController, CardTableViewCellDelegate, DetailV
     let avenirNext:UIFont = UIFont(name: "Avenir Next", size: 20)
     let titleDict:NSDictionary = [NSFontAttributeName: avenirNext,NSForegroundColorAttributeName: UIColor.whiteColor()]
     navigationController?.navigationBar.titleTextAttributes = titleDict
+
   }
   
   override func viewDidAppear(animated: Bool) {
