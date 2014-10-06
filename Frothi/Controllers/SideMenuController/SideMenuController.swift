@@ -8,19 +8,15 @@ class SideMenuController : UIViewController, UITableViewDataSource, UITableViewD
   let orangeColor = UIColor(red: 57/255, green: 35/255, blue: 13/225, alpha: 1.0).CGColor
   
 
-  let navigation:Array<String> = ["Menu" , "Account"]
+  let navigation:Dictionary<String,String> = ["Menu": "icon-cup", "Account": "icon-person", "Service Areas": "icon-map"]
   let cellIdentifier:String = "Navigation"
   
   var homeController:UINavigationController!
   var selected:String = ""
-
-  
-  
   
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: cellIdentifier)
     
     setupGradient()
   }
@@ -35,16 +31,22 @@ class SideMenuController : UIViewController, UITableViewDataSource, UITableViewD
   }
 
   func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-      var cell = tableView.dequeueReusableCellWithIdentifier(self.cellIdentifier) as UITableViewCell
-      cell.textLabel?.text = navigation[indexPath.row]
-      return cell
+    var cell = tableView.dequeueReusableCellWithIdentifier(self.cellIdentifier, forIndexPath: indexPath) as NavigationTableViewCell
+    let key = Array(navigation.keys)[indexPath.row]
+    let icon = navigation[key]!
+    
+    cell.navLabel?.text = key
+    cell.navImageView.image = UIImage(named: icon)
+    
+    return cell
   }
   
 
   //  UITableViewDelegate Methods
   func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath!) {
     var newFrontController:UIViewController
-    let selectedNav:String = navigation[indexPath.row]
+    let selectedNav:String = Array(navigation.keys)[indexPath.row]
+    
     var selected:String = ""
     
     switch selectedNav {
@@ -56,65 +58,21 @@ class SideMenuController : UIViewController, UITableViewDataSource, UITableViewD
       let accountController = storyboard.instantiateViewControllerWithIdentifier("AccountController") as AccountController
       newFrontController = UINavigationController(rootViewController: accountController)
       selected = "AccountSelected"
+      
+    case "Service Areas":
+      let storyboard = UIStoryboard(name: "ServiceAreasController", bundle: nil)
+      let serviceAreasController = storyboard.instantiateViewControllerWithIdentifier("ServiceAreasController") as ServiceAreasController
+      newFrontController = UINavigationController(rootViewController: serviceAreasController)
+      selected = "ServiceAreasSelected"
+      
     default:
-      newFrontController = UINavigationController(rootViewController: HomeController())
-      println("Default")
+      newFrontController = homeController
     }
     self.revealViewController().pushFrontViewController(newFrontController, animated: true)
     
-//    let alert = UIAlertController(title: "Item selected", message: "You selected item \(indexPath.row), selectedNav: \(selectedNav), selected: \(selected)", preferredStyle: UIAlertControllerStyle.Alert)
-//    alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Cancel, handler: nil))
-//    self.presentViewController(alert, animated: true, completion: nil)
+
   }
 
-//
-//  func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
-//    println(indexPath.row)
-//    var selectedNav:String = navigation[indexPath.row]
-//    var newFrontController:UIViewController
-//    
-//    println("Selected: \(selectedNav)" )
-//    switch selectedNav {
-//    case "Menu":
-//      newFrontController = UINavigationController(rootViewController: HomeController())
-//      println("Menu")
-//    case "Account":
-//      newFrontController = UINavigationController(rootViewController: AccountController())
-//      println("Account")
-//    default:
-//      newFrontController = UINavigationController(rootViewController: HomeController())
-//    }
-//    
-//    //    self.revealViewController().pushFrontViewController(newFrontController, animated: true)
-//    
-//  }
-  
-  
-
-//
-  
-//  func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
-//    println(indexPath.row)
-//    var selectedNav:String = menu[indexPath.row]
-//    var newFrontController:UIViewController
-//    
-//    println("Selected: \(selectedNav)" )
-//    switch selectedNav {
-//    case "Menu":
-//      newFrontController = UINavigationController(rootViewController: HomeController())
-//      println("Menu")
-//    case "Account":
-//      newFrontController = UINavigationController(rootViewController: AccountController())
-//      println("Account")
-//    default:
-//      newFrontController = UINavigationController(rootViewController: HomeController())
-//    }
-//    
-////    self.revealViewController().pushFrontViewController(newFrontController, animated: true)
-//    
-//  }
-  
-  
   
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
     

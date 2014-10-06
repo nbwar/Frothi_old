@@ -27,6 +27,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SWRevealViewControllerDel
     sideMenuController.homeController = homeNavigationController
     
     var revealController = SWRevealViewController(rearViewController: sideMenuController, frontViewController: homeNavigationController)
+//    revealController.rearViewRevealWidth = 215
+
 
     
     window?.rootViewController = revealController

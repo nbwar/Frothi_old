@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D96007F6-0C8A-45B9-AB0B-A1133620B1BB</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Frothi</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>834094A55C2705633623C5CA2349DB8EFD45352A</key>
+		<string>github.com:nbwar/Frothi.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Frothi.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>834094A55C2705633623C5CA2349DB8EFD45352A</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:nbwar/Frothi.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>834094A55C2705633623C5CA2349DB8EFD45352A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>834094A55C2705633623C5CA2349DB8EFD45352A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Frothi</string>
+		</dict>
+	</array>
+</dict>
+</plist>

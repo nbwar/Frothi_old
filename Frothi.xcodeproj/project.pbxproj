@@ -13,10 +13,13 @@
 		0143E2CF19BD394300768A00 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0143E2CE19BD394300768A00 /* GradientView.swift */; };
 		0143E2D119BE95C800768A00 /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0143E2D019BE95C800768A00 /* Cart.swift */; };
 		0143E2D319BE95DA00768A00 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0143E2D219BE95DA00768A00 /* Item.swift */; };
+		014F848019E3382B00611DFC /* ServiceAreasController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014F847F19E3382B00611DFC /* ServiceAreasController.swift */; };
+		014F848219E3399700611DFC /* ServiceAreasController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 014F848119E3399700611DFC /* ServiceAreasController.storyboard */; };
 		0192350219D267D4007E6B11 /* SideMenuController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0192350119D267D4007E6B11 /* SideMenuController.storyboard */; };
 		0192350419D274DC007E6B11 /* AccountController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0192350319D274DC007E6B11 /* AccountController.storyboard */; };
 		0192350F19D284D8007E6B11 /* HomeController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0192350E19D284D8007E6B11 /* HomeController.storyboard */; };
 		0192351619D2A060007E6B11 /* LoginController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0192351519D2A060007E6B11 /* LoginController.storyboard */; };
+		0192351A19D3C51D007E6B11 /* NavigationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0192351919D3C51D007E6B11 /* NavigationTableViewCell.swift */; };
 		019873F019C01A8E00C27ABC /* OrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019873EF19C01A8E00C27ABC /* OrderTableViewCell.swift */; };
 		01B720F619BBC14700FCA4ED /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B720F519BBC14700FCA4ED /* HomeController.swift */; };
 		01B720F819BBE0C500FCA4ED /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B720F719BBE0C500FCA4ED /* CardTableViewCell.swift */; };
@@ -50,10 +53,13 @@
 		0143E2CE19BD394300768A00 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		0143E2D019BE95C800768A00 /* Cart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
 		0143E2D219BE95DA00768A00 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		014F847F19E3382B00611DFC /* ServiceAreasController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceAreasController.swift; sourceTree = "<group>"; };
+		014F848119E3399700611DFC /* ServiceAreasController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ServiceAreasController.storyboard; sourceTree = "<group>"; };
 		0192350119D267D4007E6B11 /* SideMenuController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SideMenuController.storyboard; sourceTree = "<group>"; };
 		0192350319D274DC007E6B11 /* AccountController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AccountController.storyboard; sourceTree = "<group>"; };
 		0192350E19D284D8007E6B11 /* HomeController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HomeController.storyboard; sourceTree = "<group>"; };
 		0192351519D2A060007E6B11 /* LoginController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginController.storyboard; sourceTree = "<group>"; };
+		0192351919D3C51D007E6B11 /* NavigationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationTableViewCell.swift; sourceTree = "<group>"; };
 		019873EF19C01A8E00C27ABC /* OrderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderTableViewCell.swift; sourceTree = "<group>"; };
 		01B720F519BBC14700FCA4ED /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeController.swift; path = Frothi/Controllers/HomeController/HomeController.swift; sourceTree = SOURCE_ROOT; };
 		01B720F719BBE0C500FCA4ED /* CardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
@@ -93,6 +99,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		014F847E19E3380A00611DFC /* ServiceAreasController */ = {
+			isa = PBXGroup;
+			children = (
+				014F847F19E3382B00611DFC /* ServiceAreasController.swift */,
+				014F848119E3399700611DFC /* ServiceAreasController.storyboard */,
+			);
+			path = ServiceAreasController;
+			sourceTree = "<group>";
+		};
 		0192350B19D283C0007E6B11 /* HomeController */ = {
 			isa = PBXGroup;
 			children = (
@@ -192,6 +207,7 @@
 		01EF594D19BAC6B80049B181 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				014F847E19E3380A00611DFC /* ServiceAreasController */,
 				01F0E5B619CFB19B00DA8E84 /* AccountController */,
 				0192350B19D283C0007E6B11 /* HomeController */,
 				01F0E5B319CFA05700DA8E84 /* SideMenuController */,
@@ -210,6 +226,7 @@
 				01B7210119BCCCCB00FCA4ED /* DetailView.swift */,
 				0143E2CE19BD394300768A00 /* GradientView.swift */,
 				019873EF19C01A8E00C27ABC /* OrderTableViewCell.swift */,
+				0192351919D3C51D007E6B11 /* NavigationTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -322,6 +339,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				014F848219E3399700611DFC /* ServiceAreasController.storyboard in Resources */,
 				0192351619D2A060007E6B11 /* LoginController.storyboard in Resources */,
 				0192350219D267D4007E6B11 /* SideMenuController.storyboard in Resources */,
 				01B7210019BC43A100FCA4ED /* DetailView.xib in Resources */,
@@ -383,12 +401,14 @@
 				01B720F819BBE0C500FCA4ED /* CardTableViewCell.swift in Sources */,
 				0108F23919C02D4900C237C5 /* MockData.swift in Sources */,
 				01EF592F19BABFE10049B181 /* AppDelegate.swift in Sources */,
+				014F848019E3382B00611DFC /* ServiceAreasController.swift in Sources */,
 				01B7210219BCCCCB00FCA4ED /* DetailView.swift in Sources */,
 				01F0E5B819CFB1AB00DA8E84 /* AccountController.swift in Sources */,
 				01EF595419BACA390049B181 /* BlurView.swift in Sources */,
 				019873F019C01A8E00C27ABC /* OrderTableViewCell.swift in Sources */,
 				0138C35519CF58FC004FEE8E /* SideMenuController.swift in Sources */,
 				0143E2D319BE95DA00768A00 /* Item.swift in Sources */,
+				0192351A19D3C51D007E6B11 /* NavigationTableViewCell.swift in Sources */,
 				01EF595A19BAE9250049B181 /* SpringAnimations.swift in Sources */,
 				0143E2D119BE95C800768A00 /* Cart.swift in Sources */,
 				0143E2CF19BD394300768A00 /* GradientView.swift in Sources */,
