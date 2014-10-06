@@ -64,7 +64,7 @@
 		01B720F519BBC14700FCA4ED /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeController.swift; path = Frothi/Controllers/HomeController/HomeController.swift; sourceTree = SOURCE_ROOT; };
 		01B720F719BBE0C500FCA4ED /* CardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
 		01B720FF19BC43A100FCA4ED /* DetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailView.xib; sourceTree = "<group>"; };
-		01B7210119BCCCCB00FCA4ED /* DetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		01B7210119BCCCCB00FCA4ED /* DetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailView.swift; path = Frothi/Views/DetailView/DetailView.swift; sourceTree = SOURCE_ROOT; };
 		01EF592919BABFE10049B181 /* Frothi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Frothi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01EF592D19BABFE10049B181 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01EF592E19BABFE10049B181 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +106,15 @@
 				014F848119E3399700611DFC /* ServiceAreasController.storyboard */,
 			);
 			path = ServiceAreasController;
+			sourceTree = "<group>";
+		};
+		014F848319E3536300611DFC /* DetailView */ = {
+			isa = PBXGroup;
+			children = (
+				01B7210119BCCCCB00FCA4ED /* DetailView.swift */,
+				01B720FF19BC43A100FCA4ED /* DetailView.xib */,
+			);
+			path = DetailView;
 			sourceTree = "<group>";
 		};
 		0192350B19D283C0007E6B11 /* HomeController */ = {
@@ -154,7 +163,6 @@
 				01EF594C19BAC6B40049B181 /* API */,
 				01EF594B19BAC6B10049B181 /* Models */,
 				01EF592E19BABFE10049B181 /* AppDelegate.swift */,
-				01B720FF19BC43A100FCA4ED /* DetailView.xib */,
 				01EF593519BABFE10049B181 /* Images.xcassets */,
 				01EF592C19BABFE10049B181 /* Supporting Files */,
 				0138C35119CF4892004FEE8E /* Frothi-Bridging-Header.h */,
@@ -223,7 +231,7 @@
 				01EF595319BACA390049B181 /* BlurView.swift */,
 				01EF595919BAE9250049B181 /* SpringAnimations.swift */,
 				01B720F719BBE0C500FCA4ED /* CardTableViewCell.swift */,
-				01B7210119BCCCCB00FCA4ED /* DetailView.swift */,
+				014F848319E3536300611DFC /* DetailView */,
 				0143E2CE19BD394300768A00 /* GradientView.swift */,
 				019873EF19C01A8E00C27ABC /* OrderTableViewCell.swift */,
 				0192351919D3C51D007E6B11 /* NavigationTableViewCell.swift */,
