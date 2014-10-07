@@ -34,7 +34,7 @@ class ServiceAreasController : UIViewController, MKMapViewDelegate {
   func setupMap() {
     let location = CLLocationCoordinate2D(
       latitude: 37.7833,
-      longitude: -122.4000
+      longitude: -122.4080
     )
     
     let span = MKCoordinateSpanMake(0.05, 0.05)

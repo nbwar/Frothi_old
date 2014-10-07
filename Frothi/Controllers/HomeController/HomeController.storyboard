@@ -291,7 +291,7 @@
             </objects>
             <point key="canvasLocation" x="-600" y="205.42666666666668"/>
         </scene>
-        <!--Home Controller-->
+        <!--Frothi-->
         <scene sceneID="kel-Wo-Dxz">
             <objects>
                 <tableViewController id="YGK-nP-Cx5" customClass="HomeController" customModule="Frothi" customModuleProvider="target" sceneMemberID="viewController">
@@ -378,7 +378,7 @@
                             <outlet property="delegate" destination="YGK-nP-Cx5" id="J8e-UT-aSr"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="eYY-O7-3mo">
+                    <navigationItem key="navigationItem" title="Frothi" id="eYY-O7-3mo">
                         <barButtonItem key="leftBarButtonItem" image="icon-menu" id="XsK-wJ-LWk">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         </barButtonItem>
