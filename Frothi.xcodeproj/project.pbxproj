@@ -25,6 +25,7 @@
 		01B720F819BBE0C500FCA4ED /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B720F719BBE0C500FCA4ED /* CardTableViewCell.swift */; };
 		01B7210019BC43A100FCA4ED /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01B720FF19BC43A100FCA4ED /* DetailView.xib */; };
 		01B7210219BCCCCB00FCA4ED /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B7210119BCCCCB00FCA4ED /* DetailView.swift */; };
+		01C27D9819E491B500B5A049 /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C27D9719E491B500B5A049 /* RegistrationController.swift */; };
 		01EF592F19BABFE10049B181 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EF592E19BABFE10049B181 /* AppDelegate.swift */; };
 		01EF593619BABFE10049B181 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01EF593519BABFE10049B181 /* Images.xcassets */; };
 		01EF594219BABFE10049B181 /* FrothiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EF594119BABFE10049B181 /* FrothiTests.swift */; };
@@ -65,6 +66,7 @@
 		01B720F719BBE0C500FCA4ED /* CardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
 		01B720FF19BC43A100FCA4ED /* DetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailView.xib; sourceTree = "<group>"; };
 		01B7210119BCCCCB00FCA4ED /* DetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailView.swift; path = Frothi/Views/DetailView/DetailView.swift; sourceTree = SOURCE_ROOT; };
+		01C27D9719E491B500B5A049 /* RegistrationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		01EF592919BABFE10049B181 /* Frothi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Frothi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01EF592D19BABFE10049B181 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01EF592E19BABFE10049B181 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -221,6 +223,7 @@
 				01F0E5B319CFA05700DA8E84 /* SideMenuController */,
 				0192351219D29FED007E6B11 /* LoginController */,
 				0143E2CC19BD356600768A00 /* OrderController.swift */,
+				01C27D9719E491B500B5A049 /* RegistrationController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -414,6 +417,7 @@
 				01F0E5B819CFB1AB00DA8E84 /* AccountController.swift in Sources */,
 				01EF595419BACA390049B181 /* BlurView.swift in Sources */,
 				019873F019C01A8E00C27ABC /* OrderTableViewCell.swift in Sources */,
+				01C27D9819E491B500B5A049 /* RegistrationController.swift in Sources */,
 				0138C35519CF58FC004FEE8E /* SideMenuController.swift in Sources */,
 				0143E2D319BE95DA00768A00 /* Item.swift in Sources */,
 				0192351A19D3C51D007E6B11 /* NavigationTableViewCell.swift in Sources */,

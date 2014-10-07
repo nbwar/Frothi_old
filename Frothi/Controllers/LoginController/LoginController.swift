@@ -5,15 +5,23 @@ class LoginController : UIViewController {
   @IBOutlet weak var createAccountButton: UIButton!
   @IBOutlet weak var loginView: UIView!
   
+  
+  var animate:Bool = true
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     BlurView.insertBlurView(backgroundBlurView, style: .Dark)
     loginView.alpha = 0
+
   }
   
   override func viewDidAppear(animated: Bool) {
     super.viewDidAppear(Bool())
-    animateLoginView()
+    
+    if animate {
+      animateLoginView()
+      animate = false
+    }
   }
   
   override func prefersStatusBarHidden() -> Bool {

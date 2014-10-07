@@ -16,8 +16,9 @@ class SideMenuController : UIViewController, UITableViewDataSource, UITableViewD
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
-    setupGradient()
+
+    let colors:[AnyObject] = [blueColor, orangeColor]
+    gradientView.drawGradient(colors)
   }
   
   override func viewDidAppear(animated: Bool) {
@@ -83,10 +84,6 @@ class SideMenuController : UIViewController, UITableViewDataSource, UITableViewD
 
   
   //  Helpers
-  func setupGradient() {
-    let colors:[AnyObject] = [blueColor, orangeColor]
-    gradientView.drawGradient(view, colors: colors)
-  }
   
   func activeCellDidChange(newIndexPath:NSIndexPath) {
     if let unwrappedActiveIndexPath = activeIndexPath {

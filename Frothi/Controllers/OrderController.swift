@@ -16,13 +16,10 @@ class OrderController : UIViewController, UITableViewDelegate, UITableViewDataSo
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    setupGradient()
+    let colors:[AnyObject] = [blueColor, orangeColor]
+    gradientView.drawGradient(colors)
   }
   
-  func setupGradient() {
-    let colors:[AnyObject] = [blueColor, orangeColor]
-    gradientView.drawGradient(view, colors: colors)
-  }
   
   func numberOfSectionsInTableView(tableView: UITableView) -> Int {
     return 1
