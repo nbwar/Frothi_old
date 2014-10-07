@@ -10,7 +10,7 @@ class CardTableViewCell : UITableViewCell {
   var delegate: CardTableViewCellDelegate?
   var item:Item!
   
-  @IBOutlet weak var cardView: UIView!
+//  @IBOutlet weak var cardView: UIView!
   @IBOutlet weak var blackBarView: UIView!
   @IBOutlet weak var amountLabel: UILabel!
   @IBOutlet weak var imageButton: UIButton!

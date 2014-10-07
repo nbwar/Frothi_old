@@ -70,6 +70,7 @@ class SideMenuController : UIViewController, UITableViewDataSource, UITableViewD
       newFrontController = storyboard.instantiateInitialViewController() as UINavigationController
       
     case "Service Areas":
+      
       let storyboard = UIStoryboard(name: "ServiceAreasController", bundle: nil)
       newFrontController = storyboard.instantiateInitialViewController() as UINavigationController
       

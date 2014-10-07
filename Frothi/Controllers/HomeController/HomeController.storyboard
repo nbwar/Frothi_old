@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="yoH-f7-cYX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="wHZ-gk-roT">
     <dependencies>
         <deployment defaultVersion="1808" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
@@ -58,24 +58,24 @@
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="view-card-bottom" translatesAutoresizingMaskIntoConstraints="NO" id="7MR-6q-0do">
                                                     <rect key="frame" x="0.0" y="127" width="260" height="50"/>
                                                 </imageView>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ydd-oZ-lsR">
-                                                    <rect key="frame" x="0.0" y="127" width="122" height="50"/>
-                                                    <color key="tintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <state key="normal" image="icon-minus">
-                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                    </state>
-                                                    <connections>
-                                                        <action selector="minusButtonPressed:" destination="KPZ-3P-7Zq" eventType="touchUpInside" id="G7D-4J-WBQ"/>
-                                                    </connections>
-                                                </button>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hzP-Qc-O0c">
-                                                    <rect key="frame" x="138" y="127" width="122" height="50"/>
+                                                    <rect key="frame" x="149" y="127" width="122" height="50"/>
                                                     <color key="tintColor" red="0.0" green="0.56078431370000004" blue="0.83529411760000005" alpha="1" colorSpace="calibratedRGB"/>
                                                     <state key="normal" image="icon-plus">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
                                                         <action selector="plusButtonPressed:" destination="KPZ-3P-7Zq" eventType="touchUpInside" id="VIR-R8-GAQ"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ydd-oZ-lsR">
+                                                    <rect key="frame" x="-5" y="127" width="122" height="50"/>
+                                                    <color key="tintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <state key="normal" image="icon-minus">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="minusButtonPressed:" destination="KPZ-3P-7Zq" eventType="touchUpInside" id="G7D-4J-WBQ"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -109,9 +109,6 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="icon-cup" id="9Vt-Qg-ZCo">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            <connections>
-                                <segue destination="S4r-Uc-12o" kind="show" identifier="homeToOrder" id="wu7-rv-T5w"/>
-                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -120,7 +117,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zVE-yy-bd5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-668" y="969"/>
+            <point key="canvasLocation" x="-98" y="205"/>
         </scene>
         <!--Order Controller-->
         <scene sceneID="0Rn-MQ-DZL">
@@ -268,7 +265,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S4U-UA-V2r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-150" y="957"/>
+            <point key="canvasLocation" x="1004" y="897"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="HjR-zp-InO">
@@ -292,7 +289,132 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z4f-lm-4Xu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1145" y="969"/>
+            <point key="canvasLocation" x="-600" y="205.42666666666668"/>
+        </scene>
+        <!--Home Controller-->
+        <scene sceneID="kel-Wo-Dxz">
+            <objects>
+                <tableViewController id="YGK-nP-Cx5" customClass="HomeController" customModule="Frothi" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="200" sectionHeaderHeight="22" sectionFooterHeight="22" id="dit-cj-n2t">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Card" rowHeight="200" id="MQd-MG-xpi" customClass="CardTableViewCell" customModule="Frothi" customModuleProvider="target">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MQd-MG-xpi" id="tLD-6f-IiE">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0jO-Hr-Daz">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="152"/>
+                                            <state key="normal" image="latte-full">
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="imageButtonPressed:" destination="MQd-MG-xpi" eventType="touchUpInside" id="7xl-i4-SJ3"/>
+                                            </connections>
+                                        </button>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="view-card-bottom-full" translatesAutoresizingMaskIntoConstraints="NO" id="Rkz-da-yfX">
+                                            <rect key="frame" x="0.0" y="150" width="320" height="50"/>
+                                        </imageView>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4SY-Sw-1Ux">
+                                            <rect key="frame" x="0.0" y="150" width="140" height="50"/>
+                                            <color key="tintColor" red="1" green="0.72466295957565308" blue="0.28394803404808044" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <state key="normal" image="icon-minus">
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="minusButtonPressed:" destination="MQd-MG-xpi" eventType="touchUpInside" id="LM5-Xp-Qee"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h49-d3-8uT">
+                                            <rect key="frame" x="180" y="150" width="140" height="50"/>
+                                            <color key="tintColor" red="0.26344203948974609" green="0.6528133749961853" blue="0.96025043725967407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <state key="normal" image="icon-plus">
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="plusButtonPressed:" destination="MQd-MG-xpi" eventType="touchUpInside" id="LJr-Df-KGl"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ejb-WH-BF1">
+                                            <rect key="frame" x="142" y="158" width="35" height="34"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ib3-3m-DdO">
+                                            <rect key="frame" x="0.0" y="130" width="320" height="22"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6jp-Xh-rjN">
+                                                    <rect key="frame" x="270" y="0.0" width="50" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Latte" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EVC-qG-JmF">
+                                                    <rect key="frame" x="0.0" y="-2" width="320" height="25"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.0061178454197943211" green="0.010169860906898975" blue="0.0069666779600083828" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </view>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="amountLabel" destination="ejb-WH-BF1" id="Fqn-u0-FLd"/>
+                                    <outlet property="blackBarView" destination="Ib3-3m-DdO" id="Zvn-3H-9bf"/>
+                                    <outlet property="imageButton" destination="0jO-Hr-Daz" id="wFn-uY-Mwp"/>
+                                    <outlet property="nameLabel" destination="EVC-qG-JmF" id="EZy-2h-ajl"/>
+                                    <outlet property="priceLabel" destination="6jp-Xh-rjN" id="HuC-mQ-e6q"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="YGK-nP-Cx5" id="CWD-lk-Yeb"/>
+                            <outlet property="delegate" destination="YGK-nP-Cx5" id="J8e-UT-aSr"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="eYY-O7-3mo">
+                        <barButtonItem key="leftBarButtonItem" image="icon-menu" id="XsK-wJ-LWk">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="icon-cup" id="xSP-gn-3jS">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            <connections>
+                                <segue destination="S4r-Uc-12o" kind="push" identifier="homeToOrder" id="Fto-hE-znV"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="menuButton" destination="XsK-wJ-LWk" id="gfo-FE-A2G"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RHc-fS-sOY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="466" y="897"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="2Nm-s6-o25">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wHZ-gk-roT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="QFs-GA-7xr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="0.512290358543396" blue="0.71541529893875122" alpha="0.34999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="YGK-nP-Cx5" kind="relationship" relationship="rootViewController" id="oBT-0d-Jtf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U4c-cs-1wN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-66" y="897"/>
         </scene>
     </scenes>
     <resources>
@@ -303,6 +425,13 @@
         <image name="icon-minus" width="20" height="2"/>
         <image name="icon-plus" width="20" height="20"/>
         <image name="latte" width="262" height="125"/>
+        <image name="latte-full" width="319" height="152"/>
         <image name="view-card-bottom" width="260" height="50"/>
+        <image name="view-card-bottom-full" width="320" height="50"/>
     </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
 </document>
