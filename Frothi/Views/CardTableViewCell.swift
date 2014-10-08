@@ -9,6 +9,7 @@ protocol CardTableViewCellDelegate {
 class CardTableViewCell : UITableViewCell {
   var delegate: CardTableViewCellDelegate?
   var item:Item!
+  var blurred:Bool = false
   
 //  @IBOutlet weak var cardView: UIView!
   @IBOutlet weak var blackBarView: UIView!
@@ -35,6 +36,11 @@ class CardTableViewCell : UITableViewCell {
     nameLabel.text = item.name
     priceLabel.text = "$\(item.price)"
     imageButton.setImage(UIImage(named: item.image), forState: UIControlState.Normal)
-    BlurView.insertBlurView(blackBarView, style: .Dark)
+    
+    if !blurred {
+      BlurView.insertBlurView(blackBarView, style: .Dark)
+      blurred = true
+    }
+
   }
 }
