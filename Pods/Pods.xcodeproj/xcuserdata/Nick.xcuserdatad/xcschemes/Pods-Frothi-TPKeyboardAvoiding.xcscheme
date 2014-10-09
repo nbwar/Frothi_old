@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2C9905CEF8DB49628C3A77DC"
+               BlueprintIdentifier = "18C0DC3A10CBA7804FDEBA41"
                BuildableName = "libPods-Frothi-TPKeyboardAvoiding.a"
                BlueprintName = "Pods-Frothi-TPKeyboardAvoiding"
                ReferencedContainer = "container:Pods.xcodeproj">

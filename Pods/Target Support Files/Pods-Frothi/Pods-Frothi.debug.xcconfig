@@ -1,0 +1,5 @@
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/Canvas" "${PODS_ROOT}/Headers/Public/SWRevealViewController" "${PODS_ROOT}/Headers/Public/TPKeyboardAvoiding"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/AFNetworking" -isystem "${PODS_ROOT}/Headers/Public/Canvas" -isystem "${PODS_ROOT}/Headers/Public/SWRevealViewController" -isystem "${PODS_ROOT}/Headers/Public/TPKeyboardAvoiding"
+OTHER_LDFLAGS = -ObjC -l"Pods-Frothi-AFNetworking" -l"Pods-Frothi-Canvas" -l"Pods-Frothi-SWRevealViewController" -l"Pods-Frothi-TPKeyboardAvoiding" -framework "CoreGraphics" -framework "MobileCoreServices" -framework "Security" -framework "SystemConfiguration"
+PODS_ROOT = ${SRCROOT}/Pods

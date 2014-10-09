@@ -1,16 +1,39 @@
 PODS:
+  - AFNetworking (2.4.1):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+    - AFNetworking/UIKit
+  - AFNetworking/NSURLConnection (2.4.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.4.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.4.1)
+  - AFNetworking/Security (2.4.1)
+  - AFNetworking/Serialization (2.4.1)
+  - AFNetworking/UIKit (2.4.1):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
   - Canvas (0.1.2)
   - SWRevealViewController (2.3.0)
   - TPKeyboardAvoiding (1.2.4)
 
 DEPENDENCIES:
-  - Canvas
+  - AFNetworking (~> 2.4)
+  - Canvas (~> 0.1.2)
   - SWRevealViewController (~> 2.3)
-  - TPKeyboardAvoiding
+  - TPKeyboardAvoiding (~> 1.2.4)
 
 SPEC CHECKSUMS:
+  AFNetworking: 0aabc6fae66d6e5d039eeb21c315843c7aae51ab
   Canvas: ae2faca05a15c4d6659fb3ae5e2a14817df4449a
   SWRevealViewController: f6d80638b8e12323e87ac79562345403a799cb77
   TPKeyboardAvoiding: 925e1e1912597d1a4956697eec3bd9656552153c
 
-COCOAPODS: 0.33.1
+COCOAPODS: 0.34.2

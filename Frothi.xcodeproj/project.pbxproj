@@ -1,625 +1,1519 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		0108F23919C02D4900C237C5 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0108F23819C02D4900C237C5 /* MockData.swift */; };
-		0138C35519CF58FC004FEE8E /* SideMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0138C35419CF58FC004FEE8E /* SideMenuController.swift */; };
-		0143E2CD19BD356600768A00 /* OrderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0143E2CC19BD356600768A00 /* OrderController.swift */; };
-		0143E2CF19BD394300768A00 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0143E2CE19BD394300768A00 /* GradientView.swift */; };
-		0143E2D119BE95C800768A00 /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0143E2D019BE95C800768A00 /* Cart.swift */; };
-		0143E2D319BE95DA00768A00 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0143E2D219BE95DA00768A00 /* Item.swift */; };
-		014F848019E3382B00611DFC /* ServiceAreasController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014F847F19E3382B00611DFC /* ServiceAreasController.swift */; };
-		014F848219E3399700611DFC /* ServiceAreasController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 014F848119E3399700611DFC /* ServiceAreasController.storyboard */; };
-		0192350219D267D4007E6B11 /* SideMenuController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0192350119D267D4007E6B11 /* SideMenuController.storyboard */; };
-		0192350419D274DC007E6B11 /* AccountController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0192350319D274DC007E6B11 /* AccountController.storyboard */; };
-		0192350F19D284D8007E6B11 /* HomeController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0192350E19D284D8007E6B11 /* HomeController.storyboard */; };
-		0192351619D2A060007E6B11 /* LoginController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0192351519D2A060007E6B11 /* LoginController.storyboard */; };
-		0192351A19D3C51D007E6B11 /* NavigationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0192351919D3C51D007E6B11 /* NavigationTableViewCell.swift */; };
-		019873F019C01A8E00C27ABC /* OrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019873EF19C01A8E00C27ABC /* OrderTableViewCell.swift */; };
-		01B720F619BBC14700FCA4ED /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B720F519BBC14700FCA4ED /* HomeController.swift */; };
-		01B720F819BBE0C500FCA4ED /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B720F719BBE0C500FCA4ED /* CardTableViewCell.swift */; };
-		01B7210019BC43A100FCA4ED /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01B720FF19BC43A100FCA4ED /* DetailView.xib */; };
-		01B7210219BCCCCB00FCA4ED /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B7210119BCCCCB00FCA4ED /* DetailView.swift */; };
-		01C27D9819E491B500B5A049 /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C27D9719E491B500B5A049 /* RegistrationController.swift */; };
-		01EF592F19BABFE10049B181 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EF592E19BABFE10049B181 /* AppDelegate.swift */; };
-		01EF593619BABFE10049B181 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01EF593519BABFE10049B181 /* Images.xcassets */; };
-		01EF594219BABFE10049B181 /* FrothiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EF594119BABFE10049B181 /* FrothiTests.swift */; };
-		01EF595219BAC7560049B181 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EF595119BAC7560049B181 /* LoginController.swift */; };
-		01EF595419BACA390049B181 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EF595319BACA390049B181 /* BlurView.swift */; };
-		01EF595A19BAE9250049B181 /* SpringAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EF595919BAE9250049B181 /* SpringAnimations.swift */; };
-		01F0E5B819CFB1AB00DA8E84 /* AccountController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F0E5B719CFB1AB00DA8E84 /* AccountController.swift */; };
-		A4AEB9BDB8CF419B8849FB22 /* libPods-Frothi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 08A0870D2E99488188D4AA95 /* libPods-Frothi.a */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		01EF593C19BABFE10049B181 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 01EF592119BABFE10049B181 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 01EF592819BABFE10049B181;
-			remoteInfo = Frothi;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		0108F23819C02D4900C237C5 /* MockData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
-		0138C35119CF4892004FEE8E /* Frothi-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Frothi-Bridging-Header.h"; sourceTree = "<group>"; };
-		0138C35419CF58FC004FEE8E /* SideMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuController.swift; sourceTree = "<group>"; };
-		0143E2CC19BD356600768A00 /* OrderController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderController.swift; sourceTree = "<group>"; };
-		0143E2CE19BD394300768A00 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
-		0143E2D019BE95C800768A00 /* Cart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
-		0143E2D219BE95DA00768A00 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
-		014F847F19E3382B00611DFC /* ServiceAreasController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceAreasController.swift; sourceTree = "<group>"; };
-		014F848119E3399700611DFC /* ServiceAreasController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ServiceAreasController.storyboard; sourceTree = "<group>"; };
-		0192350119D267D4007E6B11 /* SideMenuController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SideMenuController.storyboard; sourceTree = "<group>"; };
-		0192350319D274DC007E6B11 /* AccountController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = AccountController.storyboard; path = AccountController/AccountController.storyboard; sourceTree = "<group>"; };
-		0192350E19D284D8007E6B11 /* HomeController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HomeController.storyboard; sourceTree = "<group>"; };
-		0192351519D2A060007E6B11 /* LoginController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginController.storyboard; sourceTree = "<group>"; };
-		0192351919D3C51D007E6B11 /* NavigationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationTableViewCell.swift; sourceTree = "<group>"; };
-		019873EF19C01A8E00C27ABC /* OrderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderTableViewCell.swift; sourceTree = "<group>"; };
-		01B720F519BBC14700FCA4ED /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeController.swift; path = Frothi/Controllers/HomeController/HomeController.swift; sourceTree = SOURCE_ROOT; };
-		01B720F719BBE0C500FCA4ED /* CardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
-		01B720FF19BC43A100FCA4ED /* DetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailView.xib; sourceTree = "<group>"; };
-		01B7210119BCCCCB00FCA4ED /* DetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailView.swift; path = Frothi/Views/DetailView/DetailView.swift; sourceTree = SOURCE_ROOT; };
-		01C27D9719E491B500B5A049 /* RegistrationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
-		01EF592919BABFE10049B181 /* Frothi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Frothi.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		01EF592D19BABFE10049B181 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		01EF592E19BABFE10049B181 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		01EF593519BABFE10049B181 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		01EF593B19BABFE10049B181 /* FrothiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FrothiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		01EF594019BABFE10049B181 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		01EF594119BABFE10049B181 /* FrothiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrothiTests.swift; sourceTree = "<group>"; };
-		01EF595119BAC7560049B181 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
-		01EF595319BACA390049B181 /* BlurView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
-		01EF595919BAE9250049B181 /* SpringAnimations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringAnimations.swift; sourceTree = "<group>"; };
-		01F0E5B719CFB1AB00DA8E84 /* AccountController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccountController.swift; path = AccountController/AccountController.swift; sourceTree = "<group>"; };
-		08A0870D2E99488188D4AA95 /* libPods-Frothi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Frothi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A68AAC64802A41CC96923985 /* Pods-Frothi.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Frothi.xcconfig"; path = "Pods/Pods-Frothi.xcconfig"; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		01EF592619BABFE10049B181 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A4AEB9BDB8CF419B8849FB22 /* libPods-Frothi.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		01EF593819BABFE10049B181 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		014F847E19E3380A00611DFC /* ServiceAreasController */ = {
-			isa = PBXGroup;
-			children = (
-				014F847F19E3382B00611DFC /* ServiceAreasController.swift */,
-				014F848119E3399700611DFC /* ServiceAreasController.storyboard */,
-			);
-			path = ServiceAreasController;
-			sourceTree = "<group>";
-		};
-		014F848319E3536300611DFC /* DetailView */ = {
-			isa = PBXGroup;
-			children = (
-				01B7210119BCCCCB00FCA4ED /* DetailView.swift */,
-				01B720FF19BC43A100FCA4ED /* DetailView.xib */,
-			);
-			path = DetailView;
-			sourceTree = "<group>";
-		};
-		0192350B19D283C0007E6B11 /* HomeController */ = {
-			isa = PBXGroup;
-			children = (
-				019873EF19C01A8E00C27ABC /* OrderTableViewCell.swift */,
-				0143E2CC19BD356600768A00 /* OrderController.swift */,
-				01B720F719BBE0C500FCA4ED /* CardTableViewCell.swift */,
-				01B720F519BBC14700FCA4ED /* HomeController.swift */,
-				0192350E19D284D8007E6B11 /* HomeController.storyboard */,
-			);
-			path = HomeController;
-			sourceTree = "<group>";
-		};
-		0192351219D29FED007E6B11 /* LoginController */ = {
-			isa = PBXGroup;
-			children = (
-				01C27D9719E491B500B5A049 /* RegistrationController.swift */,
-				01EF595119BAC7560049B181 /* LoginController.swift */,
-				0192351519D2A060007E6B11 /* LoginController.storyboard */,
-			);
-			path = LoginController;
-			sourceTree = "<group>";
-		};
-		01EF592019BABFE10049B181 = {
-			isa = PBXGroup;
-			children = (
-				01EF592B19BABFE10049B181 /* Frothi */,
-				01EF593E19BABFE10049B181 /* FrothiTests */,
-				01EF592A19BABFE10049B181 /* Products */,
-				A68AAC64802A41CC96923985 /* Pods-Frothi.xcconfig */,
-				07C60663112B4C84A9BD1698 /* Frameworks */,
-			);
-			sourceTree = "<group>";
-		};
-		01EF592A19BABFE10049B181 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				01EF592919BABFE10049B181 /* Frothi.app */,
-				01EF593B19BABFE10049B181 /* FrothiTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		01EF592B19BABFE10049B181 /* Frothi */ = {
-			isa = PBXGroup;
-			children = (
-				01EF594E19BAC6C50049B181 /* Views */,
-				01EF594D19BAC6B80049B181 /* Controllers */,
-				01EF594C19BAC6B40049B181 /* API */,
-				01EF594B19BAC6B10049B181 /* Models */,
-				01EF592E19BABFE10049B181 /* AppDelegate.swift */,
-				01EF593519BABFE10049B181 /* Images.xcassets */,
-				01EF592C19BABFE10049B181 /* Supporting Files */,
-				0138C35119CF4892004FEE8E /* Frothi-Bridging-Header.h */,
-			);
-			path = Frothi;
-			sourceTree = "<group>";
-		};
-		01EF592C19BABFE10049B181 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				01EF592D19BABFE10049B181 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		01EF593E19BABFE10049B181 /* FrothiTests */ = {
-			isa = PBXGroup;
-			children = (
-				01EF594119BABFE10049B181 /* FrothiTests.swift */,
-				01EF593F19BABFE10049B181 /* Supporting Files */,
-			);
-			path = FrothiTests;
-			sourceTree = "<group>";
-		};
-		01EF593F19BABFE10049B181 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				01EF594019BABFE10049B181 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		01EF594B19BAC6B10049B181 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				0143E2D019BE95C800768A00 /* Cart.swift */,
-				0143E2D219BE95DA00768A00 /* Item.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		01EF594C19BAC6B40049B181 /* API */ = {
-			isa = PBXGroup;
-			children = (
-				0108F23819C02D4900C237C5 /* MockData.swift */,
-			);
-			path = API;
-			sourceTree = "<group>";
-		};
-		01EF594D19BAC6B80049B181 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				014F847E19E3380A00611DFC /* ServiceAreasController */,
-				01F0E5B619CFB19B00DA8E84 /* AccountController */,
-				0192350B19D283C0007E6B11 /* HomeController */,
-				01F0E5B319CFA05700DA8E84 /* SideMenuController */,
-				0192351219D29FED007E6B11 /* LoginController */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		01EF594E19BAC6C50049B181 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				014F848319E3536300611DFC /* DetailView */,
-				01EF595319BACA390049B181 /* BlurView.swift */,
-				0143E2CE19BD394300768A00 /* GradientView.swift */,
-				01EF595919BAE9250049B181 /* SpringAnimations.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		01F0E5B319CFA05700DA8E84 /* SideMenuController */ = {
-			isa = PBXGroup;
-			children = (
-				0192351919D3C51D007E6B11 /* NavigationTableViewCell.swift */,
-				0138C35419CF58FC004FEE8E /* SideMenuController.swift */,
-				0192350119D267D4007E6B11 /* SideMenuController.storyboard */,
-			);
-			path = SideMenuController;
-			sourceTree = "<group>";
-		};
-		01F0E5B619CFB19B00DA8E84 /* AccountController */ = {
-			isa = PBXGroup;
-			children = (
-				01F0E5B719CFB1AB00DA8E84 /* AccountController.swift */,
-				0192350319D274DC007E6B11 /* AccountController.storyboard */,
-			);
-			name = AccountController;
-			sourceTree = "<group>";
-		};
-		07C60663112B4C84A9BD1698 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				08A0870D2E99488188D4AA95 /* libPods-Frothi.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		01EF592819BABFE10049B181 /* Frothi */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 01EF594519BABFE10049B181 /* Build configuration list for PBXNativeTarget "Frothi" */;
-			buildPhases = (
-				F729E36A6F1540E4A8961B2F /* Check Pods Manifest.lock */,
-				01EF592519BABFE10049B181 /* Sources */,
-				01EF592619BABFE10049B181 /* Frameworks */,
-				01EF592719BABFE10049B181 /* Resources */,
-				5CC80C19A9D4454FB8C523A5 /* Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Frothi;
-			productName = Frothi;
-			productReference = 01EF592919BABFE10049B181 /* Frothi.app */;
-			productType = "com.apple.product-type.application";
-		};
-		01EF593A19BABFE10049B181 /* FrothiTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 01EF594819BABFE10049B181 /* Build configuration list for PBXNativeTarget "FrothiTests" */;
-			buildPhases = (
-				01EF593719BABFE10049B181 /* Sources */,
-				01EF593819BABFE10049B181 /* Frameworks */,
-				01EF593919BABFE10049B181 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				01EF593D19BABFE10049B181 /* PBXTargetDependency */,
-			);
-			name = FrothiTests;
-			productName = FrothiTests;
-			productReference = 01EF593B19BABFE10049B181 /* FrothiTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		01EF592119BABFE10049B181 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastUpgradeCheck = 0600;
-				ORGANIZATIONNAME = nick;
-				TargetAttributes = {
-					01EF592819BABFE10049B181 = {
-						CreatedOnToolsVersion = 6.0;
-					};
-					01EF593A19BABFE10049B181 = {
-						CreatedOnToolsVersion = 6.0;
-						TestTargetID = 01EF592819BABFE10049B181;
-					};
-				};
-			};
-			buildConfigurationList = 01EF592419BABFE10049B181 /* Build configuration list for PBXProject "Frothi" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = 01EF592019BABFE10049B181;
-			productRefGroup = 01EF592A19BABFE10049B181 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				01EF592819BABFE10049B181 /* Frothi */,
-				01EF593A19BABFE10049B181 /* FrothiTests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		01EF592719BABFE10049B181 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				014F848219E3399700611DFC /* ServiceAreasController.storyboard in Resources */,
-				0192351619D2A060007E6B11 /* LoginController.storyboard in Resources */,
-				0192350219D267D4007E6B11 /* SideMenuController.storyboard in Resources */,
-				01B7210019BC43A100FCA4ED /* DetailView.xib in Resources */,
-				0192350F19D284D8007E6B11 /* HomeController.storyboard in Resources */,
-				01EF593619BABFE10049B181 /* Images.xcassets in Resources */,
-				0192350419D274DC007E6B11 /* AccountController.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		01EF593919BABFE10049B181 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		5CC80C19A9D4454FB8C523A5 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-Frothi-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F729E36A6F1540E4A8961B2F /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		01EF592519BABFE10049B181 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0143E2CD19BD356600768A00 /* OrderController.swift in Sources */,
-				01EF595219BAC7560049B181 /* LoginController.swift in Sources */,
-				01B720F819BBE0C500FCA4ED /* CardTableViewCell.swift in Sources */,
-				0108F23919C02D4900C237C5 /* MockData.swift in Sources */,
-				01EF592F19BABFE10049B181 /* AppDelegate.swift in Sources */,
-				014F848019E3382B00611DFC /* ServiceAreasController.swift in Sources */,
-				01B7210219BCCCCB00FCA4ED /* DetailView.swift in Sources */,
-				01F0E5B819CFB1AB00DA8E84 /* AccountController.swift in Sources */,
-				01EF595419BACA390049B181 /* BlurView.swift in Sources */,
-				019873F019C01A8E00C27ABC /* OrderTableViewCell.swift in Sources */,
-				01C27D9819E491B500B5A049 /* RegistrationController.swift in Sources */,
-				0138C35519CF58FC004FEE8E /* SideMenuController.swift in Sources */,
-				0143E2D319BE95DA00768A00 /* Item.swift in Sources */,
-				0192351A19D3C51D007E6B11 /* NavigationTableViewCell.swift in Sources */,
-				01EF595A19BAE9250049B181 /* SpringAnimations.swift in Sources */,
-				0143E2D119BE95C800768A00 /* Cart.swift in Sources */,
-				0143E2CF19BD394300768A00 /* GradientView.swift in Sources */,
-				01B720F619BBC14700FCA4ED /* HomeController.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		01EF593719BABFE10049B181 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				01EF594219BABFE10049B181 /* FrothiTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		01EF593D19BABFE10049B181 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 01EF592819BABFE10049B181 /* Frothi */;
-			targetProxy = 01EF593C19BABFE10049B181 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin XCBuildConfiguration section */
-		01EF594319BABFE10049B181 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-			};
-			name = Debug;
-		};
-		01EF594419BABFE10049B181 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		01EF594619BABFE10049B181 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A68AAC64802A41CC96923985 /* Pods-Frothi.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CLANG_ENABLE_MODULES = YES;
-				INFOPLIST_FILE = Frothi/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Frothi/Frothi-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-			};
-			name = Debug;
-		};
-		01EF594719BABFE10049B181 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A68AAC64802A41CC96923985 /* Pods-Frothi.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CLANG_ENABLE_MODULES = YES;
-				INFOPLIST_FILE = Frothi/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Frothi/Frothi-Bridging-Header.h";
-			};
-			name = Release;
-		};
-		01EF594919BABFE10049B181 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = FrothiTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Frothi.app/Frothi";
-			};
-			name = Debug;
-		};
-		01EF594A19BABFE10049B181 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = FrothiTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Frothi.app/Frothi";
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		01EF592419BABFE10049B181 /* Build configuration list for PBXProject "Frothi" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				01EF594319BABFE10049B181 /* Debug */,
-				01EF594419BABFE10049B181 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		01EF594519BABFE10049B181 /* Build configuration list for PBXNativeTarget "Frothi" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				01EF594619BABFE10049B181 /* Debug */,
-				01EF594719BABFE10049B181 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		01EF594819BABFE10049B181 /* Build configuration list for PBXNativeTarget "FrothiTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				01EF594919BABFE10049B181 /* Debug */,
-				01EF594A19BABFE10049B181 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = 01EF592119BABFE10049B181 /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>0108F23819C02D4900C237C5</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>MockData.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0108F23919C02D4900C237C5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0108F23819C02D4900C237C5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0138C35119CF4892004FEE8E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Frothi-Bridging-Header.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0138C35419CF58FC004FEE8E</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>SideMenuController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0138C35519CF58FC004FEE8E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0138C35419CF58FC004FEE8E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0143E2CC19BD356600768A00</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>OrderController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0143E2CD19BD356600768A00</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0143E2CC19BD356600768A00</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0143E2CE19BD394300768A00</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>GradientView.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0143E2CF19BD394300768A00</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0143E2CE19BD394300768A00</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0143E2D019BE95C800768A00</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>Cart.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0143E2D119BE95C800768A00</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0143E2D019BE95C800768A00</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0143E2D219BE95DA00768A00</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>Item.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0143E2D319BE95DA00768A00</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0143E2D219BE95DA00768A00</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>014F847E19E3380A00611DFC</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>014F847F19E3382B00611DFC</string>
+				<string>014F848119E3399700611DFC</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>ServiceAreasController</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>014F847F19E3382B00611DFC</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>ServiceAreasController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>014F848019E3382B00611DFC</key>
+		<dict>
+			<key>fileRef</key>
+			<string>014F847F19E3382B00611DFC</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>014F848119E3399700611DFC</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>path</key>
+			<string>ServiceAreasController.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>014F848219E3399700611DFC</key>
+		<dict>
+			<key>fileRef</key>
+			<string>014F848119E3399700611DFC</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>014F848319E3536300611DFC</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>01B7210119BCCCCB00FCA4ED</string>
+				<string>01B720FF19BC43A100FCA4ED</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>DetailView</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0192350119D267D4007E6B11</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>path</key>
+			<string>SideMenuController.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0192350219D267D4007E6B11</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0192350119D267D4007E6B11</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0192350319D274DC007E6B11</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>AccountController.storyboard</string>
+			<key>path</key>
+			<string>AccountController/AccountController.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0192350419D274DC007E6B11</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0192350319D274DC007E6B11</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0192350B19D283C0007E6B11</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>019873EF19C01A8E00C27ABC</string>
+				<string>0143E2CC19BD356600768A00</string>
+				<string>01B720F719BBE0C500FCA4ED</string>
+				<string>01B720F519BBC14700FCA4ED</string>
+				<string>0192350E19D284D8007E6B11</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>HomeController</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0192350E19D284D8007E6B11</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>path</key>
+			<string>HomeController.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0192350F19D284D8007E6B11</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0192350E19D284D8007E6B11</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0192351219D29FED007E6B11</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>01C27D9719E491B500B5A049</string>
+				<string>01EF595119BAC7560049B181</string>
+				<string>0192351519D2A060007E6B11</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>LoginController</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0192351519D2A060007E6B11</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>path</key>
+			<string>LoginController.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0192351619D2A060007E6B11</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0192351519D2A060007E6B11</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0192351919D3C51D007E6B11</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>NavigationTableViewCell.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0192351A19D3C51D007E6B11</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0192351919D3C51D007E6B11</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>019873EF19C01A8E00C27ABC</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>OrderTableViewCell.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>019873F019C01A8E00C27ABC</key>
+		<dict>
+			<key>fileRef</key>
+			<string>019873EF19C01A8E00C27ABC</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>01B720F519BBC14700FCA4ED</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>HomeController.swift</string>
+			<key>path</key>
+			<string>Frothi/Controllers/HomeController/HomeController.swift</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>01B720F619BBC14700FCA4ED</key>
+		<dict>
+			<key>fileRef</key>
+			<string>01B720F519BBC14700FCA4ED</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>01B720F719BBE0C500FCA4ED</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>CardTableViewCell.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>01B720F819BBE0C500FCA4ED</key>
+		<dict>
+			<key>fileRef</key>
+			<string>01B720F719BBE0C500FCA4ED</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>01B720FF19BC43A100FCA4ED</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>path</key>
+			<string>DetailView.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>01B7210019BC43A100FCA4ED</key>
+		<dict>
+			<key>fileRef</key>
+			<string>01B720FF19BC43A100FCA4ED</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>01B7210119BCCCCB00FCA4ED</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>DetailView.swift</string>
+			<key>path</key>
+			<string>Frothi/Views/DetailView/DetailView.swift</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>01B7210219BCCCCB00FCA4ED</key>
+		<dict>
+			<key>fileRef</key>
+			<string>01B7210119BCCCCB00FCA4ED</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>01C27D9719E491B500B5A049</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>RegistrationController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>01C27D9819E491B500B5A049</key>
+		<dict>
+			<key>fileRef</key>
+			<string>01C27D9719E491B500B5A049</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>01EF592019BABFE10049B181</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>01EF592B19BABFE10049B181</string>
+				<string>01EF593E19BABFE10049B181</string>
+				<string>01EF592A19BABFE10049B181</string>
+				<string>07C60663112B4C84A9BD1698</string>
+				<string>61BA048D118D5D75F9D17926</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>01EF592119BABFE10049B181</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastUpgradeCheck</key>
+				<string>0600</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>nick</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>01EF592819BABFE10049B181</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>6.0</string>
+					</dict>
+					<key>01EF593A19BABFE10049B181</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>6.0</string>
+						<key>TestTargetID</key>
+						<string>01EF592819BABFE10049B181</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>01EF592419BABFE10049B181</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+				<string>Base</string>
+			</array>
+			<key>mainGroup</key>
+			<string>01EF592019BABFE10049B181</string>
+			<key>productRefGroup</key>
+			<string>01EF592A19BABFE10049B181</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>01EF592819BABFE10049B181</string>
+				<string>01EF593A19BABFE10049B181</string>
+			</array>
+		</dict>
+		<key>01EF592419BABFE10049B181</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>01EF594319BABFE10049B181</string>
+				<string>01EF594419BABFE10049B181</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>01EF592519BABFE10049B181</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>0143E2CD19BD356600768A00</string>
+				<string>01EF595219BAC7560049B181</string>
+				<string>01B720F819BBE0C500FCA4ED</string>
+				<string>0108F23919C02D4900C237C5</string>
+				<string>01EF592F19BABFE10049B181</string>
+				<string>014F848019E3382B00611DFC</string>
+				<string>01B7210219BCCCCB00FCA4ED</string>
+				<string>01F0E5B819CFB1AB00DA8E84</string>
+				<string>01EF595419BACA390049B181</string>
+				<string>019873F019C01A8E00C27ABC</string>
+				<string>01C27D9819E491B500B5A049</string>
+				<string>0138C35519CF58FC004FEE8E</string>
+				<string>0143E2D319BE95DA00768A00</string>
+				<string>0192351A19D3C51D007E6B11</string>
+				<string>01EF595A19BAE9250049B181</string>
+				<string>0143E2D119BE95C800768A00</string>
+				<string>0143E2CF19BD394300768A00</string>
+				<string>01B720F619BBC14700FCA4ED</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>01EF592619BABFE10049B181</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>A4AEB9BDB8CF419B8849FB22</string>
+				<string>EE7888B9630D93861F44F148</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>01EF592719BABFE10049B181</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>014F848219E3399700611DFC</string>
+				<string>0192351619D2A060007E6B11</string>
+				<string>0192350219D267D4007E6B11</string>
+				<string>01B7210019BC43A100FCA4ED</string>
+				<string>0192350F19D284D8007E6B11</string>
+				<string>01EF593619BABFE10049B181</string>
+				<string>0192350419D274DC007E6B11</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>01EF592819BABFE10049B181</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>01EF594519BABFE10049B181</string>
+			<key>buildPhases</key>
+			<array>
+				<string>F729E36A6F1540E4A8961B2F</string>
+				<string>01EF592519BABFE10049B181</string>
+				<string>01EF592619BABFE10049B181</string>
+				<string>01EF592719BABFE10049B181</string>
+				<string>5CC80C19A9D4454FB8C523A5</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Frothi</string>
+			<key>productName</key>
+			<string>Frothi</string>
+			<key>productReference</key>
+			<string>01EF592919BABFE10049B181</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>01EF592919BABFE10049B181</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Frothi.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>01EF592A19BABFE10049B181</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>01EF592919BABFE10049B181</string>
+				<string>01EF593B19BABFE10049B181</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>01EF592B19BABFE10049B181</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>01EF592E19BABFE10049B181</string>
+				<string>0138C35119CF4892004FEE8E</string>
+				<string>01EF594E19BAC6C50049B181</string>
+				<string>01EF594D19BAC6B80049B181</string>
+				<string>01EF594C19BAC6B40049B181</string>
+				<string>01EF594B19BAC6B10049B181</string>
+				<string>01EF593519BABFE10049B181</string>
+				<string>01EF592C19BABFE10049B181</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Frothi</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>01EF592C19BABFE10049B181</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>01EF592D19BABFE10049B181</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>01EF592D19BABFE10049B181</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>01EF592E19BABFE10049B181</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>AppDelegate.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>01EF592F19BABFE10049B181</key>
+		<dict>
+			<key>fileRef</key>
+			<string>01EF592E19BABFE10049B181</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>01EF593519BABFE10049B181</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>path</key>
+			<string>Images.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>01EF593619BABFE10049B181</key>
+		<dict>
+			<key>fileRef</key>
+			<string>01EF593519BABFE10049B181</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>01EF593719BABFE10049B181</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>01EF594219BABFE10049B181</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>01EF593819BABFE10049B181</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>01EF593919BABFE10049B181</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>01EF593A19BABFE10049B181</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>01EF594819BABFE10049B181</string>
+			<key>buildPhases</key>
+			<array>
+				<string>01EF593719BABFE10049B181</string>
+				<string>01EF593819BABFE10049B181</string>
+				<string>01EF593919BABFE10049B181</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>01EF593D19BABFE10049B181</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>FrothiTests</string>
+			<key>productName</key>
+			<string>FrothiTests</string>
+			<key>productReference</key>
+			<string>01EF593B19BABFE10049B181</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>01EF593B19BABFE10049B181</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>FrothiTests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>01EF593C19BABFE10049B181</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>01EF592119BABFE10049B181</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>01EF592819BABFE10049B181</string>
+			<key>remoteInfo</key>
+			<string>Frothi</string>
+		</dict>
+		<key>01EF593D19BABFE10049B181</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>01EF592819BABFE10049B181</string>
+			<key>targetProxy</key>
+			<string>01EF593C19BABFE10049B181</string>
+		</dict>
+		<key>01EF593E19BABFE10049B181</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>01EF594119BABFE10049B181</string>
+				<string>01EF593F19BABFE10049B181</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>FrothiTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>01EF593F19BABFE10049B181</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>01EF594019BABFE10049B181</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>01EF594019BABFE10049B181</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>01EF594119BABFE10049B181</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>FrothiTests.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>01EF594219BABFE10049B181</key>
+		<dict>
+			<key>fileRef</key>
+			<string>01EF594119BABFE10049B181</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>01EF594319BABFE10049B181</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Onone</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>01EF594419BABFE10049B181</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>01EF594519BABFE10049B181</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>01EF594619BABFE10049B181</string>
+				<string>01EF594719BABFE10049B181</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>01EF594619BABFE10049B181</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>8EBBA1EE62B611E2CDC9554A</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Frothi/Info.plist</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SWIFT_OBJC_BRIDGING_HEADER</key>
+				<string>Frothi/Frothi-Bridging-Header.h</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Onone</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>01EF594719BABFE10049B181</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>6FB374923DE97C3C2944806C</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Frothi/Info.plist</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SWIFT_OBJC_BRIDGING_HEADER</key>
+				<string>Frothi/Frothi-Bridging-Header.h</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>01EF594819BABFE10049B181</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>01EF594919BABFE10049B181</string>
+				<string>01EF594A19BABFE10049B181</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>01EF594919BABFE10049B181</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(TEST_HOST)</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>FrothiTests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUILT_PRODUCTS_DIR)/Frothi.app/Frothi</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>01EF594A19BABFE10049B181</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(TEST_HOST)</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>FrothiTests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUILT_PRODUCTS_DIR)/Frothi.app/Frothi</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>01EF594B19BAC6B10049B181</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>0143E2D019BE95C800768A00</string>
+				<string>0143E2D219BE95DA00768A00</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Models</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>01EF594C19BAC6B40049B181</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>0108F23819C02D4900C237C5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>API</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>01EF594D19BAC6B80049B181</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>014F847E19E3380A00611DFC</string>
+				<string>01F0E5B619CFB19B00DA8E84</string>
+				<string>0192350B19D283C0007E6B11</string>
+				<string>01F0E5B319CFA05700DA8E84</string>
+				<string>0192351219D29FED007E6B11</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Controllers</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>01EF594E19BAC6C50049B181</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>014F848319E3536300611DFC</string>
+				<string>01EF595319BACA390049B181</string>
+				<string>0143E2CE19BD394300768A00</string>
+				<string>01EF595919BAE9250049B181</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Views</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>01EF595119BAC7560049B181</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>LoginController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>01EF595219BAC7560049B181</key>
+		<dict>
+			<key>fileRef</key>
+			<string>01EF595119BAC7560049B181</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>01EF595319BACA390049B181</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>BlurView.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>01EF595419BACA390049B181</key>
+		<dict>
+			<key>fileRef</key>
+			<string>01EF595319BACA390049B181</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>01EF595919BAE9250049B181</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>SpringAnimations.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>01EF595A19BAE9250049B181</key>
+		<dict>
+			<key>fileRef</key>
+			<string>01EF595919BAE9250049B181</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>01F0E5B319CFA05700DA8E84</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>0192351919D3C51D007E6B11</string>
+				<string>0138C35419CF58FC004FEE8E</string>
+				<string>0192350119D267D4007E6B11</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>SideMenuController</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>01F0E5B619CFB19B00DA8E84</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>01F0E5B719CFB1AB00DA8E84</string>
+				<string>0192350319D274DC007E6B11</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>AccountController</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>01F0E5B719CFB1AB00DA8E84</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>AccountController.swift</string>
+			<key>path</key>
+			<string>AccountController/AccountController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>01F0E5B819CFB1AB00DA8E84</key>
+		<dict>
+			<key>fileRef</key>
+			<string>01F0E5B719CFB1AB00DA8E84</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>07C60663112B4C84A9BD1698</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>08A0870D2E99488188D4AA95</string>
+				<string>AECC7BEF894BBC6061A08863</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>08A0870D2E99488188D4AA95</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-Frothi.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>5CC80C19A9D4454FB8C523A5</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-Frothi/Pods-Frothi-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>61BA048D118D5D75F9D17926</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>8EBBA1EE62B611E2CDC9554A</string>
+				<string>6FB374923DE97C3C2944806C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FB374923DE97C3C2944806C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-Frothi.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-Frothi/Pods-Frothi.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8EBBA1EE62B611E2CDC9554A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-Frothi.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-Frothi/Pods-Frothi.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A4AEB9BDB8CF419B8849FB22</key>
+		<dict>
+			<key>fileRef</key>
+			<string>08A0870D2E99488188D4AA95</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>AECC7BEF894BBC6061A08863</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>EE7888B9630D93861F44F148</key>
+		<dict>
+			<key>fileRef</key>
+			<string>AECC7BEF894BBC6061A08863</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F729E36A6F1540E4A8961B2F</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>01EF592119BABFE10049B181</string>
+</dict>
+</plist>

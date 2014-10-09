@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AB6E9FFC0D9E4B448F3C2CB6"
+               BlueprintIdentifier = "807C336788DB2EB9AA4A2D50"
                BuildableName = "libPods-Frothi-SWRevealViewController.a"
                BlueprintName = "Pods-Frothi-SWRevealViewController"
                ReferencedContainer = "container:Pods.xcodeproj">
