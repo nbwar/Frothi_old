@@ -4,6 +4,8 @@ class LoginController : UIViewController {
   @IBOutlet weak var backgroundBlurView: UIView!
   @IBOutlet weak var createAccountButton: UIButton!
   @IBOutlet weak var loginView: UIView!
+  @IBOutlet weak var emailField: UITextField!
+  @IBOutlet weak var passwordField: UITextField!
   
   
   var animate:Bool = true
@@ -26,6 +28,24 @@ class LoginController : UIViewController {
   
   override func prefersStatusBarHidden() -> Bool {
     return true
+  }
+  
+  @IBAction func loginButtonPressed(sender: AnyObject) {
+    let email = emailField.text!
+    let password = passwordField.text!
+    let data = ["email":email, "password":password]
+    
+    
+    Session.login(data, success: { (operation, response) in
+      println("operation \(operation.responseData)")
+      println("response \(response)")
+
+      //  Push to home controller or pop off the view stack depending how i implement the login screen
+    }, failure: { (operation, response) in
+      println("operation \(operation.responseData)")
+      println("response \(response)")
+        
+    })
   }
   
   func animateLoginView() {
